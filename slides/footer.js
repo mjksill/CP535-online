@@ -56,7 +56,7 @@ head.load("../../reveal.js/js/reveal.js", function() {
     if (!(typeof(audiofiles) === 'undefined')) {
 	revealopts.dependencies = revealopts.dependencies.concat([
             { src: '../../reveal.js-plugins/audio-slideshow/slideshow-recorder.js', condition: function( ) { return !!document.body.classList; } },
-	    { src: '../reveal.js-plugins/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+	    { src: '../../reveal.js-plugins/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
 	]);
 	revealopts.audio = {
 	    prefix: audiofiles,
