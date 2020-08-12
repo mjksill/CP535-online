@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8">
   <title>
     This is a test of using reveal.js
   </title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
   <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
   <link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
 
@@ -18,34 +24,39 @@
     <h2>This is a test</h2>
   </section>
 
+  <section>
+    <h2>This is a test 2</h2>
+  </section>
+
+  
 </section>
 </div>
 </div>
+
+
+
 <script src="../../reveal.js/dist/reveal.js"></script>
-  
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<script src="../../reveal.js/plugin/highlight/highlight.js"></script>
 <script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-    
-    
-// Optional libraries used to extend on reveal.js
-dependencies: [
-{ src: '../../reveal.js-plugins/chalkboard/chalkboard.js' },
- { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: '../../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '../../reveal.js/plugin/zoom/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: '../../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-    ,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, },
-});
+
+	// Also available as an ES module, see:
+	// https://revealjs.com/initialization/
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		center: true,
+		hash: true,
+
+		// Learn about plugins: https://revealjs.com/plugins/
+		plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+	});
+
 </script>
+
   
 </body>
 </html>
