@@ -1,0 +1,663 @@
+#+TITLE: CP535: Molecular and interfacial science
+#+AUTHOR: Leo Lue
+#+EMAIL: leo.lue@strath.ac.uk
+
+
+#+OPTIONS: reveal_title_slide:nil
+
+
+#+REVEAL_ROOT: ../../reveal.js
+
+#+REVEAL_HLEVEL: 1
+
+#+OPTIONS: c:nil  timestamp:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+REVEAL_INIT_OPTIONS: width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+#+REVEAL_INIT_OPTIONS: plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder]
+
+#+REVEAL_THEME: beige
+
+#+REVEAL_HTML: <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+
+#+REVEAL_INIT_SCRIPT:  chalkboard: { src: "chalkboard.json", },
+#+REVEAL_INIT_SCRIPT: 	keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() },
+#+REVEAL_INIT_SCRIPT:    66: function() { RevealChalkboard.toggleChalkboard() },	
+#+REVEAL_INIT_SCRIPT:    46: function() { RevealChalkboard.clear() },	
+#+REVEAL_INIT_SCRIPT:     8: function() { RevealChalkboard.reset() },	
+#+REVEAL_INIT_SCRIPT:    68: function() { RevealChalkboard.download() },	
+#+REVEAL_INIT_SCRIPT:    88: function() { RevealChalkboard.colorNext() },	
+#+REVEAL_INIT_SCRIPT:    89: function() { RevealChalkboard.colorPrev() },	
+#+REVEAL_INIT_SCRIPT:  },
+
+
+#+REVEAL_HTML: <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+#+REVEAL_HTML: <script src="../../reveal.js/plugin/notes/notes.js"></script>
+#+REVEAL_HTML: <script src="../../reveal.js/plugin/search/search.js"></script>
+#+REVEAL_HTML: <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+
+#+REVEAL_HTML: <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+#+REVEAL_HTML: <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+#+REVEAL_HTML: <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+#+REVEAL_INIT_SCRIPT:	audio: {
+#+REVEAL_INIT_SCRIPT:		prefix: 'audio/', 	
+#+REVEAL_INIT_SCRIPT:		suffix: '.ogg',		
+#+REVEAL_INIT_SCRIPT:		textToSpeechURL: null,  
+#+REVEAL_INIT_SCRIPT:		defaultNotes: false, 	
+#+REVEAL_INIT_SCRIPT:		defaultText: false, 	
+#+REVEAL_INIT_SCRIPT:		advance: 0, 		
+#+REVEAL_INIT_SCRIPT:		autoplay: true,	
+#+REVEAL_INIT_SCRIPT:		defaultDuration: 5,	
+#+REVEAL_INIT_SCRIPT:		defaultAudios: true,	
+#+REVEAL_INIT_SCRIPT:		playerOpacity: 0.05,	
+#+REVEAL_INIT_SCRIPT:		playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', 
+#+REVEAL_INIT_SCRIPT:		startAtFragment: false, 
+#+REVEAL_INIT_SCRIPT:	},
+
+
+* CP535: Molecular and interfacial science
+
+#+REVEAL_HTML: <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+#+REVEAL_HTML: <p class='fragment' data-audio-src='advert/2020_07_29_19_39_15.mp3'></p>
+
+
+
+#+BEGIN_NOTES
+
+Hello, all.  This is Leo.  You might remember me from the heat
+transfer portion of CP204.  This semester I will be delivering the
+fifth year module CP535: Molecular and Interfacial Science.
+
+In this module, we will be covering the fundamentals of phenomena at
+interfaces and the processes that occur at the molecular level.  The
+aim will be to understand the properties and behavior of materials,
+their microscopic origins, and how these can be exploited in
+applications.
+
+
+
+
+
+
+The module will officially start on Monday September 23.  The MyPlace site is still under construction, so I will be modifying and adding material during the next few weeks.
+
+If you have any questions, please feel free to post them in the discussion forum, and I will be happy to address them.
+
+
+
+
+gain a fundamental
+understanding of the principles of how these technologies work
+
+
+link between the properties and behavior of materials and applications.
+
+the basics of interfacial science,
+which studies the physics of the boundaries between materials, and
+molecular science
+
+
+
+
+
+
+at the molecular scale
+
+
+- chemical engineering of the future
+  - there is a strong push to go to smaller scales and to make
+    processes cleaner and more sustainable.  However, a big issue
+    associated with current technologies is that most of the
+    efficiencies are really linked with scaling up the process in
+    order to exploit efficiencies of scale.
+  - flexibility: much of the advances have been mainly linked to "just
+    in time"
+  - nanotechnology
+
+- understand the underlying principles of new technologies
+- these will enable you to possibly come up with new technologies
+
+
+
+#+END_NOTES
+
+* Future directions in chemical engineering
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_19_45_12.mp3'></p>
+
+
+[[../figures/applications.png]]
+
+
+#+BEGIN_NOTES
+
+There are a lot of innovations and breakthroughs being made in
+materials science and nanotechnology, which have the potential to
+radically change many aspects of chemical engineering, such as in
+process monitoring, chemical synthesis, and energy storage and
+harvesting.
+
+One of these advances is the field of digital microfluidics, where
+innovations in the miniaturization of electronics can be used to
+develop devices where we can precisely coordinate the movement of
+small droplets of solutions.  This allows us to transport, mix, react,
+or analyze solutions.  This has tremendous potential for applications,
+such as in developing a lab-on-a-chip, small on-demand microreactors,
+or blood analysis devices.
+
+In this module we will gain a better understanding of the electronic
+properties of materials and how these can be exploited in
+applications, such as for the development of light emitting diodes and
+photovoltaic cells.  This will also allow us to understand the basic
+working principles behind the creation of self-cleaning surfaces, the
+use of sunlight to catalyze reactions such as the splitting of water
+into hydrogen and oxygen, and the analysis and manipulation of
+chemistry at the molecule level.
+
+Hopefully, this module will allow you to better relate these
+technologies and their implications to your particular interests.
+Perhaps, you might be able to incorporate some of these innovations in
+your work or possibly even invent and develop your own technologies
+based on these ideas.
+
+- https://ars.els-cdn.com/content/image/1-s2.0-S016943321401650X-fx1.jpg
+- https://www.news-medical.net/image.axd?picture=2019%2f2%2fBy_science_photo_(2).jpg&ts=20190206102357&ri=673
+- https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/DMF_open_and_closed_system.png/866px-DMF_open_and_closed_system.png
+
+#+END_NOTES
+
+* Topics
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_21_53_38.mp3'></p>
+
+- Interfacial science
+- Microscopic dynamics
+- Statistical mechanics
+- Electronic properties of materials
+
+#+BEGIN_NOTES
+
+The main topics that will be covered in the module can be divided into four main sections: (i) interfacial science, (ii) microscopic dynamics, (iii) statistical mechanics, and (iv) the electronic properties of materials.
+
+Within the interfacial science section of the module, we will discuss how the surface tension of a material originates from the interactions between its constituent molecules.  We will then consider some of the consequences of surface tension, such as dictating the shapes of droplets, the wetting of solid surfaces by liquid drops, capillary forces, and bridging forces.  As part of this, we will also go into a bit of depth on the mathematical description of surfaces and interfaces.
+
+Next, we will turn our attention to the dynamics of systems at the microscopic scale.  We will briefly review classical mechanics and introduce some concepts of how we characterize the microscopic state of a systems.  This will then take us to a basic introduction to quantum mechanics.
+
+Statistical mechanics provides a connection between microscopic interactions between the molecules that make up a system and its macroscopic behavior, such as its thermodynamic properties.  We will go through some simple examples, including deriving the Maxwell-Boltzmann velocity distribution, examining ideal gases, and the studying the adsorption of gases onto surfaces.
+
+The final topic applies the basic quantum mechanics and statistical mechanics we learned previously to examine the electronic properties of materials and the use of these properties in applications, such as the creation of LEDs and solar cells and in catalysis.
+
+  - diodes: LEDs, photovoltaic cells
+  - transistors
+  - vacuum tubes
+  - catalysis: electro catalysis
+
+
+
+
+applications in nanofabrication, 
+
+include
+
+- interfacial science
+  - surface or interfacial tension and its origin from intermolecular
+    interactions
+- microscopic dynamics
+  - classical mechanics
+  - phase space
+  - introduction to quantum mechanics
+    - free particle
+    - particle in a box
+- statistical mechanics
+  - connection between microscopic
+- electronic properties of materials
+  - metals
+  - band theory
+  - semiconductors
+- applications
+  - diodes: LEDs, photovoltaic cells
+  - transistors
+  - vacuum tubes
+  - catalysis: electro catalysis
+
+#+END_NOTES
+
+* Overview
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_21_08_52.mp3'></p>
+
+
+- Module leader: Leo Lue
+- Demonstrator: Chris Boyle 
+- Lectures / Q&A sessions:
+  - Tuesday 15.00--16.00 (weeks 1--10)
+  - Friday 11.00--12.00 (weeks 1--10)
+- Tutorials:  
+  Tuesday 16.00--17.00 (weeks 1--10)
+- Module review:
+  - Tuesday 13.00-15.00 (week 11)
+  - Friday 11.00--12.00 (week 11)
+
+#+BEGIN_NOTES
+
+<p class="fragment" data-audio-src='advert/2020_07_29_10_04.mp3'></p>
+
+
+I will be the lecturer for this module, and Chris Boyle will be the
+demonstrator.
+
+Lectures and question & answer sessions will be held live on Zoom on
+Tuesdays from 3.00 to 4.00 pm and on Fridays from 11.00 to 12.00 pm.
+The Tuesday sessions will mainly be devoted to covering new material,
+while the Friday sessions will be mainly to review material from the
+past week or earlier and to provide help on any coursework problems or
+to answer any questions about the module.  Its format will be mainly
+informal and flexible.
+
+Tutorial sessions will run every week on Tuesdays from 4.00 to 5.00 pm
+following on straight after the lectures.  There will be two main
+pieces of coursework for this module, which I will discuss in more
+detail later when I cover assessment.  The tutorial sessions are there
+for you to get help in working through the coursework.
+
+Finally, in the last teaching week of the semester (i.e. week 11), the
+lecture and tutorial sessions will be used to provide a review for
+module material and preparation for the final examination.
+
+
+#+END_NOTES
+
+
+** Tentative schedule
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_21_29_58.mp3'></p>
+
+
+- Week 1: Surfaces and interfaces
+- Week 2: Solid interfaces
+- Week 3: Microscopic dynamics
+- Week 4: Statistical mechanics
+- Week 5: Ideal gases and kinetic theory
+- Week 6: Adsorption
+- Week 7: Quantum systems
+- Week 8: Electronic properties of materials
+- Week 9: Electronic devices
+- Week 10: Catalysis
+- Week 11: Module review
+
+
+#+BEGIN_NOTES
+
+A tentative schedule of the lecture materials is shown here.
+
+In week 1 we will cover surfaces and interfaces, and in week 2 we will
+look more closely at the interfaces between solids and liquids and
+gases.
+
+In week 3 we cover microscopic dynamics, briefly reviewing classical
+mechanics and then getting a basic introduction to quantum mechanics.
+
+In week 4 we will start into statistical mechanics and we will look at
+an example of its application in week 5 to ideal gases and kinetic
+theory.  In week 6, we will look at its specific application to
+adsorption, and then in week 7 we will apply statistical mechanics to
+quantum systems.  This will then lead us into week 8, where we will
+look at the electronic properties of materials, and from there in week
+9 we will look at electronic devices like LEDs, photovoltaic cells,
+and other devices, if time allows, such as transistors and vacuum
+tubes.  Then finally in week 10 we will look at the application of
+these concepts into catalysis, specifically electrocatalysis and
+photocatalysis.
+
+The final week is reserved for a review of the module material and
+preparation for the exam.
+
+
+#+END_NOTES
+
+** Components of assessment
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_21_37_47.mp3'></p>
+
+
+|--------------+--------+-----------------------------+---------------|
+| component    | weight | format                      | time          |
+|--------------+--------+-----------------------------+---------------|
+| final exam   |    70% | 2 hours                     | December exam |
+| coursework 1 |    15% | peer assessment (80%/20%)   | week 5        |
+| coursework 2 |    15% | peer assessment (80%/20%)   | week 10       |
+|--------------+--------+-----------------------------+---------------|
+
+
+#+BEGIN_NOTES
+
+There are three main elements of assessment.  The first is the final
+exam, which is worth 70% of the overall marks in the module.  The exam
+paper will consist of three questions that cover aspects of the entire
+content of the module.  We will discuss more details of the exam
+during the final week of the semester.
+
+There will be two pieces of coursework, one to be submitted on MyPlace
+at the end of week 5 and the other at the end of week 10.  Each is
+worth 15% of the overall marks in the module.  After each piece of
+course work is submitted, fully worked solutions will be released.
+These are peer assessed, but the marking will be moderated by myself.
+You will need to mark 3 other assignments within one week of the
+submission date.  80% of the coursework marks is for the performance
+on answering the questions, while 20% is for marking of the questions.
+
+You can work together with other students to complete the coursework,
+but your final submissions should be your own work.  The tutorial
+sessions should be used to ask questions if you are having troubles.
+The exam questions will be of a similar style and level of difficulty.
+
+#+END_NOTES
+
+
+** Review materials
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_21_47_23.mp3'></p>
+
+
+ - CP203: Thermodynamics and Chemical Principles
+   - intermolecular forces / electron energy levels
+   - thermodynamics / combined first and second laws
+ - CP204: Fluid Flow and Heat Transfer
+   - mechanics: force, momentum
+   - differential balances
+ - CP207: Process Analysis and Statistics
+   - probability distributions / mean / expectation value 
+   - correlations / standard deviation
+ - MM211: Mathematics 3B
+   - calculus
+   - differential equations
+
+#+BEGIN_NOTES
+
+Materials that will be useful for you to review are shown here.
+
+In this module, we will be applying a lot of the chemical engineering
+principles that you learned in the previous years to the molecular
+scale.  The main focus and illustrative examples that you have
+encountered on the course so far have mainly been on "macroscopic"
+systems.  In this module, we will be applying balances, kinetics,
+statistics, etc. to examine interfaces, molecules, and even electrons.
+
+#+END_NOTES
+
+* Questions?
+
+#+REVEAL_HTML: <p class="fragment" data-audio-src='advert/2020_07_29_20_52_48.mp3'></p>
+
+
+If you have any questions, please email me at leo.lue@strath.ac.uk.
+
+#+BEGIN_NOTES
+
+The module will officially start on Monday September 21, but there
+will be an on-line lecture in week 0 to give more details, which is
+tentatively scheduled for noon on Friday September 18.
+
+The MyPlace site will be open for you to view, if you are registered
+for the class; however, it is still under construction, and I will be
+modifying and adding material during the next several weeks.
+
+If you have any questions, please feel free to email me at
+leo.lue@strath.ac.uk.  I look forward to working with you this
+semester and hope you enjoy the class!
+
+
+#+END_NOTES
+
+
+
+* COMMENT Chemical engineering at alternate scales
+** Digital microfluidics
+
+#+BEGIN_EXPORT html
+<video height="500" controls>
+<source  src="../videos/Two-plate_digital_microfluidics_for_dispensing_mixing_and_merging_droplets-hVAa41qTIqg.mp4" type="video/mp4" />
+</video>
+#+END_EXPORT
+
+*** COMMENT
+quantum dot chemical luminescence
+ 10.1021/nl049713w
+
+youtube video links relating to digital microfluids
+- [[https://www.youtube.com/watch?v=hVAa41qTIqg][Two-plate digital microfluidics for dispensing, mixing, and merging droplets]]
+- [[https://www.youtube.com/watch?v=ykylkIBkIgU][Protein Depletion by Digital Microfluidics]]
+- [[https://www.youtube.com/watch?v=C677yPYXWIs][Electrowetting - Digital Microfluidics on Printed Circuit Board - Prototype]]
+- [[https://www.youtube.com/watch?v=jKwYAsJbO1A][Wheeler Microfluidics Laboratory]]
+- [[https://www.youtube.com/watch?v=6V9OGQLje18][Baebies | Digital Microfluidics Technology]]
+- [[https://www.youtube.com/watch?time_continue=54&v=z0NBsyhApvU][Programmable Droplets]]
+  - https://tangible.media.mit.edu/project/programmable-droplets/
+- [[https://www.youtube.com/watch?v=fqS-TyuplEk][Baebies | Digital Microfluidics - Electrowetting Droplet Operations]]
+- Gaudi lab / OpenDrop
+  - [[https://www.youtube.com/watch?v=TY97QfWY6J4][Control Software for OpenDrop V3 Digital Microfluidics Platform]]
+
+** Lenses
+
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/liquid_lenses_in_imaging_3.png]]
+
+
+#+BEGIN_NOTES
+
+https://www.edmundoptics.com/resources/application-notes/imaging/liquid-lenses-in-imaging/
+https://www.edmundoptics.com/globalassets/resources/app-notes/imaging/liquid_lenses_in_imaging_3.png
+
+normal variable focus
+https://www.bhphotovideo.com/explora/photography/tips-and-solutions/how-focus-works
+
+#+END_NOTES
+
+** Displays: e-ink
+
+#+ATTR_HTML: :height 300
+[[../figures/bitmap/e-ink.png]]
+
+#+ATTR_HTML: :height 300
+[[../figures/bitmap/electrowetting-ink.png]]
+
+** Photovoltaics
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/article_18.jpg]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/photovoltaics_01.jpg]]
+#+REVEAL_HTML: </div>
+
+
+#+BEGIN_NOTES
+
+https://rgsenergy.com/wp-content/uploads/2015/09/article_18.jpg
+
+https://www.wbdg.org/resources/photovoltaics
+https://www.wbdg.org/images/photovoltaics_01.jpg
+
+#+END_NOTES
+** Energy harvesting
+
+
+
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/1-s2.0-S2211285515000932-fx1_lrg.jpg]]
+
+
+#+BEGIN_NOTES
+
+10.1016/j.nanoen.2015.02.034
+
+
+#+END_NOTES
+
+** COMMENT Manipulating matter: Optical trapping
+   
+*** COMMENTS
+../figures/bitmap/focusedbeam.png
+../figures/bitmap/3dtrapping.png
+
+** COMMENT Soft robotics
+** Surface characterization techniques
+
+Example: Scanning Tunneling Microscopy (STM): Based on *quantum
+tunneling effect*, has atomic resolution, and is used to manipulate atoms.
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 400
+[[../figures/bitmap/tunneling.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 400 :width auto
+[[../figures/bitmap/STM.png]]
+#+REVEAL_HTML: </div>
+
+** Reactions for an individual molecule
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/hi_2948.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/hi_2949.png]]
+#+REVEAL_HTML: </div>
+
+** Triggering and observing reactions on a single molecule
+
+#+BEGIN_EXPORT html
+<video height="500" controls>
+<source  src="../videos/IBM_Scientists_Trigger_and_Observe_Reactions_in_an_Individual_Molecule-OOkbt16M3Mg.mp4">
+</video>
+#+END_EXPORT
+
+** A boy and his atom - movie
+
+#+BEGIN_EXPORT html
+<video height="500" controls>
+<!--source  src="https://www.youtube.com/watch?v=oSCX78-8-q0"-->
+<!--source  src="../videos/A Boy And His Atom - The World's Smallest Movie-oSCX78-8-q0.mkv"-->
+<source  src="../videos/A_Boy_And_His_Atom_-_The_World_s_Smallest_Movie-oSCX78-8-q0.mp4">
+</video>
+#+END_EXPORT
+
+** ripples explanation
+
+#+BEGIN_EXPORT html
+<video height="500" controls>
+<source  src="../videos/IBM Atomic Shorts - Ripples on the surface-bZ6Hv_du2Zo.mp4">
+</video>
+#+END_EXPORT
+
+* COMMENT Module overview
+
+- Week 1: Surfaces and interfaces
+- Week 2: Solid interfaces
+- Week 3: Microscopic dynamics
+- Week 4: Statistical mechanics
+- Week 5: Ideal gases and kinetic theory
+- Week 6: Adsorption
+- Week 7: Quantum systems
+- Week 8: Electronic properties of materials
+- Week 9: Electronic devices
+- Week 10: Catalysis
+- Week 11: Module review
+
+** Surfaces and interfaces
+
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/SurfacesAndInterfaces.png]]
+
+** Properties of surfaces and nanofabrication
+
+Water repellent and self-cleaning surfaces (windows, solar panels),
+anti-icing, anti bio-fouling (marine, biomedical), corrosion
+resistant, electronics and energy harvesting materials.
+
+#+ATTR_HTML: :height 300
+[[../figures/bitmap/surfaces.png]]
+
+
+** Microscopic dynamics
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:40%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/trajectory.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:60%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/quantum.png]]
+#+REVEAL_HTML: </div>
+
+** Statistical mechanics
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/water.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/liquidwater.png]]
+#+REVEAL_HTML: </div>
+
+** Electronic properties of materials
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/band.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/brillioun.png]]
+#+REVEAL_HTML: </div>
+
+** Electronic devices
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500
+[[../figures/bitmap/led.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/solar.png]]
+#+REVEAL_HTML: </div>
+
+** Catalysis
+
+#+REVEAL_HTML: <div class="column" style="float:left; width:50%">
+#+ATTR_HTML: :height 500 :width auto
+[[../figures/bitmap/catalysis1.png]]
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width:50%">
+#+ATTR_HTML: :height 500 
+[[../figures/bitmap/catalysis2.png]]
+#+REVEAL_HTML: </div>
+* COMMENT Summary
+
+ - CP535 is a 10-credit module
+ - time requirement: 100 hours
+ - 30 contact hours
+ - 70 hours of self-study
+   - private study
+   - revision
+   - coursework
+* COMMENT local variables
+
+# Local Variables:
+# org-reveal-plugins: ()
+# org-reveal-title-slide: nil 
+# End:
