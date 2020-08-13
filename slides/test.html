@@ -53,6 +53,19 @@
 
 		// Learn about plugins: https://revealjs.com/plugins/
 		plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+
+dependencies: [
+    { src: '../../reveal.js-plugins/chalkboard/chalkboard.js' },
+],
+	    chalkboard: { src: "chalkboard.json", },
+	    keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() },
+			66: function() { RevealChalkboard.toggleChalkboard() },
+			46: function() { RevealChalkboard.clear() },
+			8: function() { RevealChalkboard.reset() },
+			68: function() { RevealChalkboard.download() },
+			88: function() { RevealChalkboard.colorNext() },
+			89: function() { RevealChalkboard.colorPrev() }, },
+
 	});
 
 </script>
