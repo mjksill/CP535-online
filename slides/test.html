@@ -41,6 +41,9 @@
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
 <script src="../../reveal.js/plugin/highlight/highlight.js"></script>
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+
 <script>
 
 	// Also available as an ES module, see:
@@ -52,11 +55,8 @@
 		hash: true,
 
 		// Learn about plugins: https://revealjs.com/plugins/
-		plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ],
+	    plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealChalkboard ],
 		
-dependencies: [
-    { src: '../../reveal.js-plugins/chalkboard/chalkboard.js' },
-],
 	    chalkboard: { src: "chalkboard.json", },
 	    keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() },
 			66: function() { RevealChalkboard.toggleChalkboard() },
