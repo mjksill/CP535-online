@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Catalysis</title>
+<meta name="author" content="(L Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-org77bb660">
+<h2 id="org77bb660">CP535: Molecular and interfacial science</h2>
+<h2>Catalysis</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<p class="fragment" data-audio-src="python/title.mp3">
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orga168711">
+<h2 id="orga168711">Overview</h2>
+<p class="fragment" data-audio-src='audio/birds.ogg'></p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgda14f7d">
+<h2 id="orgda14f7d">Thermodynamics</h2>
+<p>
+First law of thermodynamics
+</p>
+<div>
+\begin{align*}
+  dU &= \delta Q - \delta W 
+\end{align*}
+
+</div>
+
+<p>
+Second law of thermodynamics
+</p>
+<div>
+\begin{align*}
+  dS \ge \frac{\delta Q}{T}
+\end{align*}
+
+</div>
+
+<p>
+Combined first and second laws of thermodynamics
+</p>
+<div>
+\begin{align*}
+dU &\le T dS - p dV - \delta W'
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-orgb42d062">
+<h3 id="orgb42d062">Maximum work</h3>
+<p>
+Combined first and second laws of thermodynamics
+</p>
+<div>
+\begin{align*}
+\delta W' &\le - dU  + T dS - p dV 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and volume: \(A=U-TS\)
+</p>
+<div>
+\begin{align*}
+\delta W' &\le - dA  - SdT - p dV 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and pressure: \(G=U-TS+pV\)
+</p>
+<div>
+\begin{align*}
+\delta W' &\le - dG  - SdT + V dp
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-orgc80fed2">
+<h3 id="orgc80fed2">Free energy minimization</h3>
+<p>
+Constant entropy and volume
+</p>
+<div>
+\begin{align*}
+dU &\le TdS - p dV + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+<p>
+Constant energy and volume
+</p>
+<div>
+\begin{align*}
+dS &\le \frac{1}{T} dU + \frac{p}{T} dV 
+- \sum_\alpha \frac{\mu_\alpha}{T} dN_\alpha 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and volume: \(A=U-TS\)
+</p>
+<div>
+\begin{align*}
+dA &\le - SdT - p dV + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and pressure: \(G=U-TS+pV\)
+</p>
+<div>
+\begin{align*}
+dG &\le - SdT + V dp + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-orgc2c7401">
+<h3 id="orgc2c7401">Quasi-equilibrium transitions</h3>
+<p>
+Constant entropy and volume
+</p>
+<div>
+\begin{align*}
+dU &= SdT - p dV + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and volume: \(A=U-TS\)
+</p>
+<div>
+\begin{align*}
+dA &= - SdT - p dV + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+<p>
+Constant temperature and pressure: \(G=U-TS+pV\)
+</p>
+<div>
+\begin{align*}
+dG &= - SdT + V dp + \sum_\alpha \mu_\alpha dN_\alpha 
+\end{align*}
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org17ef8b1">
+<h2 id="org17ef8b1">Reaction equilibrium</h2>
+<div>
+\begin{align*}
+{\rm CH_3COOH(aq)} \rightleftharpoons 
+  {\rm CH_3COO^-(aq)} + {\rm H}^+(aq)
+\end{align*}
+
+</div>
+
+<p>
+Reaction extent \(\xi\)
+</p>
+<div>
+\begin{align*}
+N_\alpha &= N_\alpha^{(0)} + \nu_\alpha \xi
+\\
+dN_\alpha &= \nu_\alpha d\xi
+\end{align*}
+
+</div>
+
+<p>
+Minimize \(G\) at constant temperature and pressure
+</p>
+<div>
+\begin{align*}
+dG &= \sum_\alpha \mu_\alpha \nu_\alpha d\xi
+\\
+\frac{\partial G}{\partial\xi} 
+&= \sum_\alpha \nu_\alpha  \mu_\alpha = 0
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-org875d4e1">
+<h3 id="org875d4e1">Liquid solutions</h3>
+<p>
+Chemical potential in solution
+</p>
+<div>
+\begin{align*}
+\mu_\alpha &= \mu_\alpha^\ominus + k_BT \ln \frac{c_\alpha}{c^\ominus} \gamma_\alpha
+\end{align*}
+
+</div>
+
+<p>
+Equilibrium constant:
+</p>
+<div>
+\begin{align*}
+\sum_\alpha \nu_\alpha \mu_\alpha &= 0
+\\
+\prod_\alpha \left(\frac{c_\alpha}{c^\ominus} \gamma_\alpha\right)^{\nu_\alpha} 
+&= \exp\left( - \frac{\Delta G_{\rm rxn}}{k_B T}\right)
+= K
+\\
+\frac{\Delta G_{\rm rxn}}{k_B T} &= \sum_\alpha \nu_\alpha\mu_\alpha^\ominus
+\end{align*}
+
+</div>
+
+
+</section>
+<section id="slide-org6ce0566">
+<h3 id="org6ce0566">Disassociation of acetic acid</h3>
+<div>
+\begin{align*}
+{\rm CH_3COOH(aq)} \rightleftharpoons 
+  {\rm CH_3COO^-(aq)} + {\rm H^+(aq)}
+\end{align*}
+
+</div>
+
+<p>
+Equilibrium constant:
+</p>
+<div>
+\begin{align*}
+\frac{{\rm [CH_3COO^-][H^+]}}{{\rm [CH_3COOH]}}  &= K_a
+\\
+\log\frac{{\rm [CH_3COO^-]}}{{\rm [CH_3COOH]}} 
+&= pH - pK_a 
+\end{align*}
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orge211f86">
+<h2 id="orge211f86">Electrocatalysis</h2>
+<div class="outline-text-2" id="text-orge211f86">
+</div>
+</section>
+<section id="slide-org8aa2f26">
+<h3 id="org8aa2f26">Standard electrode potentials</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/11-table-01.png" alt="11-table-01.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org19b4981">
+<h3 id="org19b4981">Standard hydrogen electrode</h3>
+</section>
+<section id="slide-org54f91bd">
+<h3 id="org54f91bd">Electrode reactions</h3>
+</section>
+<section id="slide-org908a2ca">
+<h3 id="org908a2ca">Electrode reactions</h3>
+</section>
+<section id="slide-org1b704e7">
+<h3 id="org1b704e7">Energy states</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb528b24">
+<h2 id="orgb528b24">Photocatalysis</h2>
+
+<div class="figure">
+<p><img src="../figures/bitmap/Linsebiglor_etal_1995_24.png" alt="Linsebiglor_etal_1995_24.png" />
+</p>
+</div>
+
+<div>
+\begin{align*}
+\phi_{\rm M} = E_{\rm M}^{\rm SHE} + 4.44\pm0.02\,{\rm V}
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+% <a href="http://photochemistryportal.net/home/index.php/category/semi-conductor-photocatalysis/">http://photochemistryportal.net/home/index.php/category/semi-conductor-photocatalysis/</a>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgf2fbb9b">
+<h3 id="orgf2fbb9b">Photocatalytic water splitting</h3>
+</section>
+<section id="slide-org973a084">
+<h3 id="org973a084">Conversion of CO\(_2\) to hydrocarbons</h3>
+</section>
+<section id="slide-org066e6b8">
+<h3 id="org066e6b8">Semiconductor sensitized solar cells</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org7da46d6">
+<h2 id="org7da46d6">Summary</h2>
+<ul>
+<li>reaction equilibrium</li>
+<li>electrocatalysis</li>
+<li>photocatalysis</li>
+<li>dye sensitized solar cells</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+</script>
+</body>
+</html>
