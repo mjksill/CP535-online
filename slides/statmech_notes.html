@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -26,10 +26,15 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="LL.css" id="theme">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -42,19 +47,20 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org9885a77">
-<h2 id="org9885a77">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-org96c4ed2">
+<h2 id="org96c4ed2">CP535/970: Molecular and interfacial science</h2>
 <h2>Statistical mechanics</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
-<p class="fragment" data-audio-src="statmech/title.mp3">
-</p>
+<p class="fragment" data-audio-src="statmech/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
 
 </section>
 </section>
 <section>
-<section id="slide-org5386d7b">
-<h2 id="org5386d7b">Overview</h2>
+<section id="slide-org1422508" data-audio-src="statmech/overview.ogg">
+<h2 id="org1422508">Overview</h2>
 <ul>
 <li>Basic concepts</li>
 <li>Connecting microscopic with macroscopic</li>
@@ -68,14 +74,14 @@
 </section>
 </section>
 <section>
-<section id="slide-org522851f">
-<h2 id="org522851f">Phase space</h2>
+<section id="slide-orgf404399">
+<h2 id="orgf404399">Phase space</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org921f3cf">
-<h2 id="org921f3cf">Density of states</h2>
+<section id="slide-orgdb28156">
+<h2 id="orgdb28156">Density of states</h2>
 
 <div class="figure">
 <p><img src="../figures/phasespace.png" alt="phasespace.png" />
@@ -85,45 +91,45 @@
 </section>
 </section>
 <section>
-<section id="slide-org37f5eeb">
-<h2 id="org37f5eeb">Basic concepts</h2>
+<section id="slide-org2a5df9a">
+<h2 id="org2a5df9a">Basic concepts</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-orgad2fa51">
-<h2 id="orgad2fa51">Canonical ensemble</h2>
-<div class="outline-text-2" id="text-orgad2fa51">
+<section id="slide-org5055683">
+<h2 id="org5055683">Canonical ensemble</h2>
+<div class="outline-text-2" id="text-org5055683">
 </div>
 </section>
-<section id="slide-org8941202">
-<h3 id="org8941202">Enumerating phase space</h3>
+<section id="slide-org2a94308">
+<h3 id="org2a94308">Enumerating phase space</h3>
 
 
 </section>
-<section id="slide-orga58b5c1">
-<h3 id="orga58b5c1">Barometric formula</h3>
+<section id="slide-org1e6f70d">
+<h3 id="org1e6f70d">Barometric formula</h3>
 </section>
-<section id="slide-org3652f76">
-<h3 id="org3652f76">Maxwell-Boltzmann velocity distribution</h3>
+<section id="slide-org42108c7">
+<h3 id="org42108c7">Maxwell-Boltzmann velocity distribution</h3>
 </section>
-<section id="slide-orgd341f6f">
-<h3 id="orgd341f6f">Maxwell-Boltzmann speed distribution</h3>
+<section id="slide-org9ced210">
+<h3 id="org9ced210">Maxwell-Boltzmann speed distribution</h3>
 </section>
-<section id="slide-orgdbe2d15">
-<h3 id="orgdbe2d15">Classical ideal gas</h3>
-
-</section>
-</section>
-<section>
-<section id="slide-orgf5a9d8c">
-<h2 id="orgf5a9d8c">Grand canonical ensemble</h2>
+<section id="slide-orgee0c6d3">
+<h3 id="orgee0c6d3">Classical ideal gas</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org70bb7f2">
-<h2 id="org70bb7f2">Summary</h2>
+<section id="slide-org2730221">
+<h2 id="org2730221">Grand canonical ensemble</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd487ce8" data-audio-src="statmech/summary.ogg">
+<h2 id="orgd487ce8">Summary</h2>
 <ul>
 <li>Phase space</li>
 <li>Density of states and entropy</li>
@@ -159,7 +165,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
