@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="../reveal.js/dist/reveal.css"/>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '../reveal.js/css/print/pdf.css';
+        link.href = '../../reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -27,28 +27,41 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
 
 <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
-
 <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
+
 <section>
-<section id="slide-org8eee8a5">
-<h2 id="org8eee8a5">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-orgc3db7fb">
+<h2 id="orgc3db7fb">CP535/970: Molecular and interfacial science</h2>
 <h2>Electronic devices</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
+<p class="fragment" data-audio-src="devices/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
 </section>
 </section>
 <section>
-<section id="slide-org605ca02">
-<h2 id="org605ca02">Overview</h2>
+<section id="slide-org2396c36">
+<h2 id="org2396c36">Overview</h2>
 <ul>
 <li>The p-n junction</li>
 <li>General background</li>
@@ -62,91 +75,91 @@
 </section>
 </section>
 <section>
-<section id="slide-orgdbb8306">
-<h2 id="orgdbb8306">p-n junctions</h2>
-<div class="outline-text-2" id="text-orgdbb8306">
+<section id="slide-orgc612e07">
+<h2 id="orgc612e07">p-n junctions</h2>
+<div class="outline-text-2" id="text-orgc612e07">
 </div>
 </section>
-<section id="slide-org4ac022e">
-<h3 id="org4ac022e">Depletion layer</h3>
+<section id="slide-orgadc3a72">
+<h3 id="orgadc3a72">Depletion layer</h3>
 
 </section>
-<section id="slide-orge22b322">
-<h3 id="orge22b322">Forward and reverse bias</h3>
+<section id="slide-orgeda1c5c">
+<h3 id="orgeda1c5c">Forward and reverse bias</h3>
 
 </section>
-<section id="slide-orgdd80aae">
-<h3 id="orgdd80aae">Transport</h3>
+<section id="slide-org0f5995a">
+<h3 id="org0f5995a">Transport</h3>
 
 </section>
-<section id="slide-org2023d5c">
-<h3 id="org2023d5c">\(I\) - \(V\) characteristics</h3>
+<section id="slide-orgaad1f19">
+<h3 id="orgaad1f19">\(I\) - \(V\) characteristics</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org1c35c03">
-<h2 id="org1c35c03">World energy consumption</h2>
-<div class="outline-text-2" id="text-org1c35c03">
+<section id="slide-orgab46b6b">
+<h2 id="orgab46b6b">World energy consumption</h2>
+<div class="outline-text-2" id="text-orgab46b6b">
 </div>
 </section>
-<section id="slide-org7271618">
-<h3 id="org7271618">Blackbody radiation</h3>
+<section id="slide-orged418a4">
+<h3 id="orged418a4">Blackbody radiation</h3>
 </section>
-<section id="slide-org7623384">
-<h3 id="org7623384">Blackbody radiation</h3>
+<section id="slide-org002d204">
+<h3 id="org002d204">Blackbody radiation</h3>
 </section>
-<section id="slide-org615a8e6">
-<h3 id="org615a8e6">Solar irradiation</h3>
+<section id="slide-orge722fa7">
+<h3 id="orge722fa7">Solar irradiation</h3>
 </section>
-<section id="slide-org3bfd844">
-<h3 id="org3bfd844">Solar power</h3>
+<section id="slide-org36e9cbb">
+<h3 id="org36e9cbb">Solar power</h3>
 </section>
-<section id="slide-orgf08426e">
-<h3 id="orgf08426e">Cell efficiencies</h3>
+<section id="slide-orge745b3f">
+<h3 id="orge745b3f">Cell efficiencies</h3>
 </section>
-<section id="slide-orgf6d3fb4">
-<h3 id="orgf6d3fb4">Adsorption of light</h3>
+<section id="slide-org024ffa9">
+<h3 id="org024ffa9">Adsorption of light</h3>
 </section>
-<section id="slide-orga289619">
-<h3 id="orga289619">Direct and indirect band gap</h3>
+<section id="slide-org01eecb2">
+<h3 id="org01eecb2">Direct and indirect band gap</h3>
 </section>
-<section id="slide-org1e98d7f">
-<h3 id="org1e98d7f">Structure of a photovoltaic cell</h3>
+<section id="slide-org90c305e">
+<h3 id="org90c305e">Structure of a photovoltaic cell</h3>
 </section>
-<section id="slide-org883e694">
-<h3 id="org883e694">Shockley-Queisser limit</h3>
+<section id="slide-orgb3f0aef">
+<h3 id="orgb3f0aef">Shockley-Queisser limit</h3>
 </section>
-<section id="slide-org143b5b7">
-<h3 id="org143b5b7">Practical considerations</h3>
+<section id="slide-org307c1cd">
+<h3 id="org307c1cd">Practical considerations</h3>
 </section>
 </section>
 <section>
-<section id="slide-org34e845c">
-<h2 id="org34e845c">Quantum dots</h2>
-<div class="outline-text-2" id="text-org34e845c">
+<section id="slide-orgae4fce7">
+<h2 id="orgae4fce7">Quantum dots</h2>
+<div class="outline-text-2" id="text-orgae4fce7">
 </div>
 </section>
-<section id="slide-org08cc836">
-<h3 id="org08cc836">Kubo gap</h3>
+<section id="slide-orgf355e3d">
+<h3 id="orgf355e3d">Kubo gap</h3>
 </section>
-<section id="slide-org0e64704">
-<h3 id="org0e64704">Excitons</h3>
+<section id="slide-orge92ca89">
+<h3 id="orge92ca89">Excitons</h3>
 </section>
-<section id="slide-orgf396ab6">
-<h3 id="orgf396ab6">CdSe quantum dots</h3>
+<section id="slide-org700b1e3">
+<h3 id="org700b1e3">CdSe quantum dots</h3>
 </section>
-<section id="slide-org1dc5701">
-<h3 id="org1dc5701">Quantum dot lasers</h3>
+<section id="slide-org3b71ede">
+<h3 id="org3b71ede">Quantum dot lasers</h3>
 </section>
-<section id="slide-org32f9470">
-<h3 id="org32f9470">Quantum dot solar cells</h3>
+<section id="slide-org77380b2">
+<h3 id="org77380b2">Quantum dot solar cells</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org8ce65e9">
-<h2 id="org8ce65e9">Summary</h2>
+<section id="slide-org62ba0c8">
+<h2 id="org62ba0c8">Summary</h2>
 <ul>
 <li>General background</li>
 <li>Adsorption of light</li>
@@ -160,14 +173,14 @@
 </section>
 </div>
 </div>
-<script src="../reveal.js/dist/reveal.js"></script>
+<script src="../../reveal.js/dist/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
-plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
@@ -177,7 +190,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: 0, autoplay: false, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>

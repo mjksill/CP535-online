@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="../reveal.js/dist/reveal.css"/>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,7 +18,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '../reveal.js/css/print/pdf.css';
+        link.href = '../../reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -26,22 +26,40 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
 
 <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
-
 <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org030b1ad">
-<h2 id="org030b1ad">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-org8f69511">
+<h2 id="org8f69511">CP535/970: Molecular and interfacial science</h2>
 <h2>Quantum systems</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<p class="fragment" data-audio-src="quantum/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
+
+
+<aside class="notes">
+nil
+</aside>
 
 <p class='fragment' data-audio-src='advert/2020_07_29_19_39_15.mp3'></p>
 
@@ -58,48 +76,65 @@
 </section>
 </section>
 <section>
-<section id="slide-orgb3cfbd0">
-<h2 id="orgb3cfbd0">Overview</h2>
+<section id="slide-orgb6f8461" data-audio-src="quantum/overview.ogg">
+<h2 id="orgb6f8461">Overview</h2>
 <ul>
 <li>Fermi-Dirac statistics</li>
 <li>Bose-Einstein statistics</li>
 
 </ul>
 
-</section>
-</section>
-<section>
-<section id="slide-orgd3f4d1e">
-<h2 id="orgd3f4d1e">Fermi-Dirac statistics</h2>
+
+<aside class="notes">
+nil
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-orgc0d4190">
-<h2 id="orgc0d4190">Bose-Einstein statistics</h2>
-<div class="outline-text-2" id="text-orgc0d4190">
-</div>
-</section>
-<section id="slide-orgcc0590c">
-<h3 id="orgcc0590c">Blackbody radiation</h3>
+<section id="slide-orgdfa3084">
+<h2 id="orgdfa3084">Fermi-Dirac statistics</h2>
+<aside class="notes">
+nil
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-orgba983f2">
-<h2 id="orgba983f2">Summary</h2>
+<section id="slide-org73ddd40">
+<h2 id="org73ddd40">Bose-Einstein statistics</h2>
+<aside class="notes">
+nil
+</aside>
+
+</section>
+<section id="slide-orgafaaf72">
+<h3 id="orgafaaf72">Blackbody radiation</h3>
+<aside class="notes">
+nil
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgcf47372" data-audio-src="quantum/summary.ogg">
+<h2 id="orgcf47372">Summary</h2>
+<aside class="notes">
+nil
+</aside>
 </section>
 </section>
 </div>
 </div>
-<script src="../reveal.js/dist/reveal.js"></script>
+<script src="../../reveal.js/dist/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
-plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
@@ -109,7 +144,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: 0, autoplay: false, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>

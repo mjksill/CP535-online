@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -26,10 +26,14 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -41,141 +45,150 @@
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
+
 <section>
-<section id="slide-orge9225e5">
-<h2 id="orge9225e5">CP535: Molecular and interfacial science</h2>
+<section id="slide-orgb7e69bb">
+<h2 id="orgb7e69bb">CP535: Molecular and interfacial science</h2>
 <h2>Microscopic dynamics</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
-<p class="fragment" data-audio-src="python/title.mp3">
+<p class="fragment" data-audio-src="adsorption/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
+<aside class="notes">
+<p>
+
 </p>
 
+</aside>
 
 
-</section>
-</section>
-<section>
-<section id="slide-orgfd49f4c">
-<h2 id="orgfd49f4c">Overview</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org6b4060f">
-<h2 id="org6b4060f">Classical mechanics</h2>
+<section id="slide-org9caf113">
+<h2 id="org9caf113">Overview</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org1f49fe3">
-<h2 id="org1f49fe3">Microstates</h2>
+<section id="slide-org87395b1">
+<h2 id="org87395b1">Classical mechanics</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org2f2c353">
-<h2 id="org2f2c353">Phase space</h2>
+<section id="slide-orga775897">
+<h2 id="orga775897">Microstates</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org7ec5d99">
-<h2 id="org7ec5d99">Density of state</h2>
+<section id="slide-orgf104132">
+<h2 id="orgf104132">Phase space</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org838cbbf">
-<h2 id="org838cbbf">Quantum mechanics</h2>
+<section id="slide-orga9ce5a0">
+<h2 id="orga9ce5a0">Density of state</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org22fb07c">
-<h2 id="org22fb07c">Observables and operators</h2>
+<section id="slide-org6d5ba86">
+<h2 id="org6d5ba86">Quantum mechanics</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org2ab057e">
-<h2 id="org2ab057e">Schrodinger equation</h2>
-</section>
-</section>
-<section>
-<section id="slide-orgbe76a38">
-<h2 id="orgbe76a38">Mixed states</h2>
+<section id="slide-org66e8b3e">
+<h2 id="org66e8b3e">Observables and operators</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org0a94663">
-<h2 id="org0a94663">Free particle</h2>
+<section id="slide-org8e96401">
+<h2 id="org8e96401">Schrodinger equation</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgb7cc718">
+<h2 id="orgb7cc718">Mixed states</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org6fdf12d">
-<h2 id="org6fdf12d">Particle in a box</h2>
+<section id="slide-org1b4f4ba">
+<h2 id="org1b4f4ba">Free particle</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org1be7918">
-<h2 id="org1be7918">Wave function and particle density</h2>
+<section id="slide-orgbc44bca">
+<h2 id="orgbc44bca">Particle in a box</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org3cdb158">
-<h2 id="org3cdb158">Particle in a 3D box</h2>
-<div class="outline-text-2" id="text-org3cdb158">
+<section id="slide-org817fbe1">
+<h2 id="org817fbe1">Wave function and particle density</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb7e5c19">
+<h2 id="orgb7e5c19">Particle in a 3D box</h2>
+<div class="outline-text-2" id="text-orgb7e5c19">
 </div>
 </section>
-<section id="slide-org274530b">
-<h3 id="org274530b">Particle densities</h3>
+<section id="slide-org5bf6d58">
+<h3 id="org5bf6d58">Particle densities</h3>
 </section>
-<section id="slide-orgc5f4177">
-<h3 id="orgc5f4177">Energy levels</h3>
+<section id="slide-org0a738ac">
+<h3 id="org0a738ac">Energy levels</h3>
 </section>
-<section id="slide-org1036581">
-<h3 id="org1036581">Density of states</h3>
+<section id="slide-orge14030b">
+<h3 id="orge14030b">Density of states</h3>
 </section>
-<section id="slide-org1f9f322">
-<h3 id="org1f9f322">Quantum effects of confinement</h3>
+<section id="slide-orgec7bfee">
+<h3 id="orgec7bfee">Quantum effects of confinement</h3>
 </section>
 </section>
 <section>
-<section id="slide-org595275c">
-<h2 id="org595275c">Hydrogen-like atoms</h2>
-<div class="outline-text-2" id="text-org595275c">
+<section id="slide-org770567a">
+<h2 id="org770567a">Hydrogen-like atoms</h2>
+<div class="outline-text-2" id="text-org770567a">
 </div>
 </section>
-<section id="slide-org719d9e6">
-<h3 id="org719d9e6">Wave function</h3>
+<section id="slide-orgf909ffc">
+<h3 id="orgf909ffc">Wave function</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgc620580">
-<h2 id="orgc620580">Barrier potential</h2>
-<div class="outline-text-2" id="text-orgc620580">
+<section id="slide-org02c1765">
+<h2 id="org02c1765">Barrier potential</h2>
+<div class="outline-text-2" id="text-org02c1765">
 </div>
 </section>
-<section id="slide-orgbf66a66">
-<h3 id="orgbf66a66">Particle wave function</h3>
+<section id="slide-org87bf9b4">
+<h3 id="org87bf9b4">Particle wave function</h3>
 </section>
-<section id="slide-org867e2a9">
-<h3 id="org867e2a9">Restrictions on the wave function</h3>
+<section id="slide-org23dd48b">
+<h3 id="org23dd48b">Restrictions on the wave function</h3>
 </section>
-<section id="slide-orgb7f734c">
-<h3 id="orgb7f734c">Transmission and reflection of particles</h3>
+<section id="slide-org2fb7d50">
+<h3 id="org2fb7d50">Transmission and reflection of particles</h3>
 </section>
-<section id="slide-org59d0cdf">
-<h3 id="org59d0cdf">Transmission</h3>
+<section id="slide-org1a6259b">
+<h3 id="org1a6259b">Transmission</h3>
 </section>
 </section>
 <section>
-<section id="slide-orgb074592">
-<h2 id="orgb074592">Summary</h2>
+<section id="slide-orgcd76501">
+<h2 id="orgcd76501">Summary</h2>
 </section>
 </section>
 </div>
@@ -201,7 +214,7 @@ dependencies: [
  { src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
  { src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
  { src: '../../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>

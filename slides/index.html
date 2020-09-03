@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -26,27 +26,36 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
 
 <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
-
 <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 
 <section>
-<section id="slide-orgcd24496">
-<h2 id="orgcd24496">CP535: Molecular and interfacial science</h2>
+<section id="slide-orge6963e5">
+<h2 id="orge6963e5">CP535/970: Molecular and interfacial science</h2>
 <ul>
 <li><a href="./intro_notes.html">Module overview</a></li>
-<li>Surfaces and interfaces</li>
+<li><a href="./interfaces_notes.html">Surfaces and interfaces</a></li>
 <li>Solid interfaces</li>
 <li><a href="./dynamics_notes.html">Microscopic dynamics</a></li>
 <li><a href="./statmech_notes.html">Statistical mechanics</a></li>
+<li><a href="./kinetictheory_notes.html">Ideal gases and kinetic theory</a></li>
 <li><a href="./adsorption_notes.html">Adsorption</a></li>
 <li><a href="./quantum_notes.html">Quantum systems</a></li>
 <li><a href="./electronics_notes.html">Electronic properties of materials</a></li>
@@ -54,6 +63,90 @@
 <li><a href="./catalysis_notes.html">Catalysis</a></li>
 
 </ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfe2925e">
+<h2 id="orgfe2925e">Surfaces and interfaces</h2>
+<ul>
+<li>Surfaces and interfaces</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orga8f5cd8">
+<h2 id="orga8f5cd8">Solid interfaces</h2>
+<ul>
+<li>Solid interfaces</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb1db632">
+<h2 id="orgb1db632">Microscopic dynamics</h2>
+<p>
+For the on-line materials, click <a href="./dynamics_notes.html">here</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org0d5ba4e">
+<h2 id="org0d5ba4e">Statistical mechanics</h2>
+<p>
+For the on-line materials, click <a href="./statmech_notes.html">here</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org3251d1f">
+<h2 id="org3251d1f">Adsorption</h2>
+<p>
+For the on-line materials, click <a href="./adsorption_notes.html">here</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb59670a">
+<h2 id="orgb59670a">Quantum systems</h2>
+<p>
+For the on-line materials, click <a href="./quantum_notes.html">here</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org728168a">
+<h2 id="org728168a">Electronic properties of materials</h2>
+<p>
+For the on-line materials, click <a href="./electronics_notes.html">here</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb374bf8">
+<h2 id="orgb374bf8">Electronic devices</h2>
+<ul>
+<li><a href="./devices_notes.html">Electronic devices</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdcf024c">
+<h2 id="orgdcf024c">Catalysis</h2>
+<p>
+For the on-line materials, click <a href="./catalysis_notes.html">here</a>.
+</p>
 </section>
 </section>
 </div>
@@ -65,7 +158,7 @@
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
-plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
@@ -75,7 +168,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
