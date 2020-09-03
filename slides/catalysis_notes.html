@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -27,10 +27,14 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -43,27 +47,34 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orge0b11d8">
-<h2 id="orge0b11d8">CP535: Molecular and interfacial science</h2>
+<section id="slide-org2955e3d">
+<h2 id="org2955e3d">CP535: Molecular and interfacial science</h2>
 <h2>Catalysis</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<button onclick="showCaptions()"><i class="fa fa-closed-captioning"></i></button>
 
 <p class="fragment" data-audio-src="python/title.mp3">
 </p>
 
+<aside class="notes">
+nil
+</aside>
+
+
 </section>
 </section>
 <section>
-<section id="slide-orged82c13">
-<h2 id="orged82c13">Overview</h2>
+<section id="slide-org71025b3">
+<h2 id="org71025b3">Overview</h2>
 <p class="fragment" data-audio-src='audio/birds.ogg'></p>
 
 
 </section>
 </section>
 <section>
-<section id="slide-orgc12f0ff">
-<h2 id="orgc12f0ff">Thermodynamics</h2>
+<section id="slide-org15e1527">
+<h2 id="org15e1527">Thermodynamics</h2>
 <p>
 First law of thermodynamics
 </p>
@@ -94,9 +105,14 @@ dU &\le T dS - p dV - \delta W'
 
 </div>
 
+
+<aside class="notes">
+nil
+</aside>
+
 </section>
-<section id="slide-org514a63e">
-<h3 id="org514a63e">Maximum work</h3>
+<section id="slide-orgb5470f8">
+<h3 id="orgb5470f8">Maximum work</h3>
 <p>
 Combined first and second laws of thermodynamics
 </p>
@@ -127,9 +143,14 @@ Constant temperature and pressure: \(G=U-TS+pV\)
 
 </div>
 
+
+<aside class="notes">
+nil
+</aside>
+
 </section>
-<section id="slide-org80d2655">
-<h3 id="org80d2655">Free energy minimization</h3>
+<section id="slide-org740a33d">
+<h3 id="org740a33d">Free energy minimization</h3>
 <p>
 Constant entropy and volume
 </p>
@@ -171,9 +192,15 @@ dG &\le - SdT + V dp + \sum_\alpha \mu_\alpha dN_\alpha
 
 </div>
 
+
+<aside class="notes">
+nil
+</aside>
+
+
 </section>
-<section id="slide-orga20840a">
-<h3 id="orga20840a">Quasi-equilibrium transitions</h3>
+<section id="slide-org892b680">
+<h3 id="org892b680">Quasi-equilibrium transitions</h3>
 <p>
 Constant entropy and volume
 </p>
@@ -204,11 +231,17 @@ dG &= - SdT + V dp + \sum_\alpha \mu_\alpha dN_\alpha
 
 </div>
 
+
+<aside class="notes">
+nil
+</aside>
+
+
 </section>
 </section>
 <section>
-<section id="slide-org586405b">
-<h2 id="org586405b">Reaction equilibrium</h2>
+<section id="slide-orgc9de7df">
+<h2 id="orgc9de7df">Reaction equilibrium</h2>
 <div>
 \begin{align*}
 {\rm CH_3COOH(aq)} \rightleftharpoons 
@@ -242,9 +275,14 @@ dG &= \sum_\alpha \mu_\alpha \nu_\alpha d\xi
 
 </div>
 
+
+<aside class="notes">
+nil
+</aside>
+
 </section>
-<section id="slide-org062bbe1">
-<h3 id="org062bbe1">Liquid solutions</h3>
+<section id="slide-orgfbc3761">
+<h3 id="orgfbc3761">Liquid solutions</h3>
 <p>
 Chemical potential in solution
 </p>
@@ -272,9 +310,14 @@ Equilibrium constant:
 </div>
 
 
+<aside class="notes">
+nil
+</aside>
+
+
 </section>
-<section id="slide-orgc8072ad">
-<h3 id="orgc8072ad">Disassociation of acetic acid</h3>
+<section id="slide-org1cec874">
+<h3 id="org1cec874">Disassociation of acetic acid</h3>
 <div>
 \begin{align*}
 {\rm CH_3COOH(aq)} \rightleftharpoons 
@@ -299,13 +342,13 @@ Equilibrium constant:
 </section>
 </section>
 <section>
-<section id="slide-orgd29b668">
-<h2 id="orgd29b668">Electrocatalysis</h2>
-<div class="outline-text-2" id="text-orgd29b668">
+<section id="slide-org45fed60">
+<h2 id="org45fed60">Electrocatalysis</h2>
+<div class="outline-text-2" id="text-org45fed60">
 </div>
 </section>
-<section id="slide-orgbffda2d">
-<h3 id="orgbffda2d">Standard electrode potentials</h3>
+<section id="slide-org90ada18">
+<h3 id="org90ada18">Standard electrode potentials</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/11-table-01.png" alt="11-table-01.png" />
@@ -313,23 +356,23 @@ Equilibrium constant:
 </div>
 
 </section>
-<section id="slide-orgf9a5de3">
-<h3 id="orgf9a5de3">Standard hydrogen electrode</h3>
+<section id="slide-org37b0dc4">
+<h3 id="org37b0dc4">Standard hydrogen electrode</h3>
 </section>
-<section id="slide-org0fd6f3e">
-<h3 id="org0fd6f3e">Electrode reactions</h3>
+<section id="slide-org6dbefa2">
+<h3 id="org6dbefa2">Electrode reactions</h3>
 </section>
-<section id="slide-org41ffbc4">
-<h3 id="org41ffbc4">Electrode reactions</h3>
+<section id="slide-org2fa9e11">
+<h3 id="org2fa9e11">Electrode reactions</h3>
 </section>
-<section id="slide-org05a8267">
-<h3 id="org05a8267">Energy states</h3>
+<section id="slide-orgc02f961">
+<h3 id="orgc02f961">Energy states</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org548acc1">
-<h2 id="org548acc1">Photocatalysis</h2>
+<section id="slide-orgd14461e">
+<h2 id="orgd14461e">Photocatalysis</h2>
 
 <div class="figure">
 <p><img src="../figures/bitmap/Linsebiglor_etal_1995_24.png" alt="Linsebiglor_etal_1995_24.png" />
@@ -355,20 +398,20 @@ Equilibrium constant:
 </aside>
 
 </section>
-<section id="slide-orga386f9f">
-<h3 id="orga386f9f">Photocatalytic water splitting</h3>
+<section id="slide-orge4ae6f0">
+<h3 id="orge4ae6f0">Photocatalytic water splitting</h3>
 </section>
-<section id="slide-org97079e6">
-<h3 id="org97079e6">Conversion of CO\(_2\) to hydrocarbons</h3>
+<section id="slide-orgb2b2aeb">
+<h3 id="orgb2b2aeb">Conversion of CO\(_2\) to hydrocarbons</h3>
 </section>
-<section id="slide-org4f59bfc">
-<h3 id="org4f59bfc">Semiconductor sensitized solar cells</h3>
+<section id="slide-org5bcfc43">
+<h3 id="org5bcfc43">Semiconductor sensitized solar cells</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org6b94ba7">
-<h2 id="org6b94ba7">Summary</h2>
+<section id="slide-org00bfc27">
+<h2 id="org00bfc27">Summary</h2>
 <ul>
 <li>reaction equilibrium</li>
 <li>electrocatalysis</li>
@@ -397,7 +440,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
