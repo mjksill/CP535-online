@@ -235,7 +235,7 @@ include
   - Tuesday 15.00--16.00 (weeks 1--10)
   - Friday 11.00--12.00 (weeks 1--10)
 - Tutorials:  
-  Tuesday 16.00--17.00 (weeks 1--10)
+  - Tuesday 16.00--17.00 (weeks 1--10)
 - Module review:
   - Tuesday 13.00-15.00 (week 11)
   - Friday 11.00--12.00 (week 11)
