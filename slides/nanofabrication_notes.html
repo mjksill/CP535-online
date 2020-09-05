@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CP535: Molecular and Interfacial Science  Nanofabrication</title>
+<meta name="author" content="(L Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="../reveal.js/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">CP535: Molecular and Interfacial Science  Nanofabrication</h1><h2 class="author">L Lue</h2><h2 class="date">2019 October 01</h2>
+</section>
+
+
+<section>
+<section id="slide-org8cd9e7c">
+<h2 id="org8cd9e7c">Overview</h2>
+<ul>
+<li>Scanning tunneling microscopy</li>
+<li>Piezoelectric effect</li>
+<li>Atomic force microscopy</li>
+<li>Dipped pen nanolithography</li>
+
+</ul>
+
+
+
+<aside class="notes">
+<ul>
+<li>Self-assembled monolayers</li>
+
+</ul>
+<p>
+##+OPTIONS: reveal<sub>center</sub>:t  
+##+OPTIONS: reveal<sub>progress</sub>:t  reveal<sub>history</sub>: nil  reveal<sub>control</sub>: t
+##+OPTIONS: reveal<sub>title</sub><sub>slide</sub>:"&lt;h1&gt;%t&lt;/h1&gt;&lt;h2&gt;Nanofabrication&lt;/h2&gt;&lt;h2&gt;%a&lt;/h2&gt;"
+</p>
+
+<p>
+##+REVEAL<sub>HEAD</sub><sub>PREAMBLE</sub>: &lt;meta http-equiv="refresh" content="5" /&gt;
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgefaf251">
+<h2 id="orgefaf251">Scanning tunneling microscopy (STM)</h2>
+<div class="outline-text-2" id="text-orgefaf251">
+</div>
+</section>
+<section id="slide-org64f026b">
+<h3 id="org64f026b">Light microscope</h3>
+<div class="container" style="display:flex; justify-content:center; align-items:center">
+
+<div class="figure">
+<p><img src="../figures/bitmap/microscope_parts1.jpg" alt="microscope_parts1.jpg" height="400" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/resolution.svg" class="org-svg" height="400">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+
+</section>
+<section id="slide-orgd1bd373">
+<h3 id="orgd1bd373">Microscopy</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/Light-Microscope-and-Electron-Microscope.png" alt="Light-Microscope-and-Electron-Microscope.png" height="500" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+note that visible light has wavelengths between 400-700 nm.  This
+limits the resolution of imaging techniques that rely on photons.
+</p>
+
+
+<div class="figure">
+<p><img src="https://microbiologyinfo.com/wp-content/uploads/2015/04/Light-Microscope-and-Electron-Microscope.png" alt="Light-Microscope-and-Electron-Microscope.png" />
+</p>
+</div>
+
+<p>
+<img src="http://www.microbehunter.com/wp/wp-content/uploads/2009/microscope_parts1.jpg" alt="microscope_parts1.jpg" />
+<img src="https://clinicalgate.com/wp-content/uploads/2015/02/B9780323083300000062_f006-001-97803230833001.jpg" alt="B9780323083300000062_f006-001-97803230833001.jpg" />
+<img src="http://zeiss-campus.magnet.fsu.edu/articles/basics/images/introductionfigure5.jpg" alt="introductionfigure5.jpg" />
+</p>
+
+
+<ul>
+<li>optical</li>
+<li>transmission electron microscope</li>
+<li>scanning electron microscope (resolution of roughly 1 nm)</li>
+<li>scanning transmission electron microscope</li>
+<li>scanning tunneling microscope</li>
+
+</ul>
+
+<p>
+different types of electron microscopy
+<a href="https://www.fei.com/introduction-to-electron-microscopy/types/">https://www.fei.com/introduction-to-electron-microscopy/types/</a>
+</p>
+
+<p>
+booklet on introduction to microscopy
+<a href="https://www.fei.com/documents/introduction-to-microscopy-document/">https://www.fei.com/documents/introduction-to-microscopy-document/</a>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org59be575">
+<h3 id="org59be575">Background</h3>
+<div class="container" style="display:flex; justify-content:center; align-items:center">
+
+<div class="column" style="float:left; width:60%">
+
+<div class="figure">
+<p><img src="https://render.fineartamerica.com/images/rendered/default/canvas-print/10.000/6.500/black/break/images-medium-5/heinrich-rohrer-and-gerd-binnig-ibm-research-canvas-print.jpg" alt="heinrich-rohrer-and-gerd-binnig-ibm-research-canvas-print.jpg" height="500" />
+</p>
+</div>
+</div>
+
+
+<div class="column" style="float:right; width:40%">
+<ul>
+<li>Invented by Gerd Binnig and Heinrich Rohrer at IBM Zurich in 1986</li>
+<li>Won the Nobel Prize in Physics in 1986</li>
+
+</ul>
+</div>
+
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Scanning tunneling microscopy was invented in 1981 at IBM by Gerd
+Binnig and Heinrich Rohrer.  This won them the Nobel Prize in Physics
+in 1986.
+</p>
+
+<p>
+electron microscopes existed previously&#x2026; what was the problem?
+</p>
+
+<p>
+<a href="http://www-03.ibm.com/ibm/history/ibm100/us/en/icons/microscope/">http://www-03.ibm.com/ibm/history/ibm100/us/en/icons/microscope/</a>
+</p>
+
+
+
+<p>
+difference between electron microscope and scanning tunneling microscope
+<a href="https://www.testandmeasurementtips.com/basics-of-the-scanning-electron-microscope/">https://www.testandmeasurementtips.com/basics-of-the-scanning-electron-microscope/</a>
+</p>
+
+<p>
+The current resolution is around 0.05 nm.
+</p>
+
+</aside>
+</section>
+<section id="slide-org07adabf">
+<h3 id="org07adabf">Operating principles</h3>
+
+<div class="figure">
+<p><img src="http://www.ieap.uni-kiel.de/surface/ag-kipp/stm/images/stm.jpg" alt="stm.jpg" height="500" />
+</p>
+</div>
+</section>
+<section id="slide-org194e5f3">
+<h3 id="org194e5f3">Quantum tunneling effect</h3>
+<div class="container" style="display:flex; justify-content:center; align-items:center">
+<div class="column" style="float:left; width:50%">
+
+<div class="figure">
+<p><img src="http://www2.fkf.mpg.de/ga/research/stmtutor/bilder/stmtutor.gif" alt="stmtutor.gif" height="500" />
+</p>
+</div>
+</div>
+
+<div class="column" style="float:right; width:50%">
+<div>
+\begin{equation*}
+I_t \propto \Delta V \rho(0,E_F) e^{-2\alpha d}
+\end{equation*}
+
+</div>
+</div>
+</div>
+
+</section>
+<section id="slide-orgdbb3761">
+<h3 id="orgdbb3761">Quantum tunneling effect</h3>
+<div class="container" style="display:flex; justify-content:center; align-items:center">
+
+<div class="figure">
+<p><img src="../figures/bitmap/tunnel_stm.png" alt="tunnel_stm.png" height="300" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="../figures/bitmap/tunnel_stm_bias.png" alt="tunnel_stm_bias.png" height="300" />
+</p>
+</div>
+</div>
+
+<div>
+\begin{equation*}
+I_t \propto \Delta V \rho(0,E_F) e^{-2\alpha d}
+\end{equation*}
+
+</div>
+
+</section>
+<section id="slide-orgd93cf9d">
+<h3 id="orgd93cf9d">Quantum tunneling effect</h3>
+
+<div class="figure">
+<p><img src="https://www.mpg.de/11565362/original-1508155299.jpeg" alt="original-1508155299.jpeg" height="500" />
+</p>
+</div>
+
+</section>
+<section id="slide-org14db9eb">
+<h3 id="org14db9eb">Scanning tunneling microscopy (STM)</h3>
+<ul>
+<li>Tunneling current between sample and tip changes exponentially
+(pA-nA) with the tip-sample distance</li>
+<li>Lateral atomic resolution (0.2 nm) and vertical resolution (&lt;0.01 nm)</li>
+<li>Limited to conductive and semi-conductive surfaces</li>
+<li>For non-conductive surfaces atomic force microscopy (AFM) is used.</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org7b37d9f">
+<h2 id="org7b37d9f">Piezoelectric effect</h2>
+
+<div class="figure">
+<p><img src="../figures/bitmap/piezoelectric_effect.jpg" alt="piezoelectric_effect.jpg" height="500" />
+</p>
+</div>
+
+<aside class="notes">
+
+<div class="figure">
+<p><img src="https://www.autodesk.com/products/eagle/blog/wp-content/uploads/2018/07/piezoelectric_effect.jpg" alt="piezoelectric_effect.jpg" />
+</p>
+</div>
+
+</aside>
+
+</section>
+<section id="slide-org2663ddc">
+<h3 id="org2663ddc">Piezoelectric effect</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/Piezoelectric%20effect.jpg" alt="Piezoelectric%20effect.jpg" height="500" />
+</p>
+</div>
+
+<aside class="notes">
+
+<div class="figure">
+<p><img src="http://bme240.eng.uci.edu/students/06s/yuhsianh/images/Piezoelectric%20effect.jpg" alt="Piezoelectric%20effect.jpg" />
+</p>
+</div>
+
+</aside>
+
+</section>
+<section id="slide-org46b6aa6">
+<h3 id="org46b6aa6">Piezoelectric materials</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/main-qimg-ce8c9931341c475b102d9ee60f132330.png" alt="main-qimg-ce8c9931341c475b102d9ee60f132330.png" height="500" />
+</p>
+</div>
+
+
+
+
+<aside class="notes">
+<p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Capacitor_schematic_with_dielectric.svg/220px-Capacitor_schematic_with_dielectric.svg.png" alt="220px-Capacitor_schematic_with_dielectric.svg.png" />
+<a href="https://qph.fs.quoracdn.net/main-qimg-ce8c9931341c475b102d9ee60f132330">https://qph.fs.quoracdn.net/main-qimg-ce8c9931341c475b102d9ee60f132330</a>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org8e410dc">
+<h3 id="org8e410dc">Piezoelectric effect</h3>
+<br/>
+<div>
+\begin{align*}
+{\bf S} &= s^E\cdot {\bf T} + d\cdot{\bf E}
+\\
+{\bf D} &= d\cdot{\bf T} + \varepsilon\cdot{\bf E}
+\end{align*}
+
+</div>
+
+<br/>
+
+
+<ul>
+<li>strain: \({\bf S}\)</li>
+<li>stress: \({\bf T}\)</li>
+<li>electric field: \({\bf E}\)</li>
+<li>displacement field: \({\bf D}\)</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+The strain and stress are rank 2 tensors; however, they are both
+symmetric.  Consequently, each only has six independent components.
+</p>
+
+<ul>
+<li>11: 1</li>
+<li>22: 2</li>
+<li>33: 3</li>
+<li>23: 4</li>
+<li>13: 5</li>
+<li>12: 6</li>
+
+</ul>
+
+
+<p>
+How does the Piezoelectric Effect Work for Motion?
+<a href="https://www.youtube.com/watch?v=fHp95e-CwWQ">https://www.youtube.com/watch?v=fHp95e-CwWQ</a>
+</p>
+
+<p>
+documents regarding the piezoelectric effect
+</p>
+<ul>
+<li><a href="../library/Ledoux_2011.pdf">../library/Ledoux_2011.pdf</a></li>
+<li><a href="../library/Dahiya_Valle_2013.pdf">../library/Dahiya_Valle_2013.pdf</a></li>
+
+</ul>
+
+
+<p>
+flint (in a lighter)
+quartz: used in watches
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgde1be94">
+<h3 id="orgde1be94">Piezoelectric bi-layer beam</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/piezoelectric_bilayer_beam.png" alt="piezoelectric_bilayer_beam.png" height="500" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1ce94b9">
+<h3 id="org1ce94b9">Piezoelectric cantilever beam</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/piezoelectric_cantilever.png" alt="piezoelectric_cantilever.png" height="500" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org371564f">
+<h2 id="org371564f">Atomic force microscopy</h2>
+<div class="container" style="display:flex; justify-content:center; align-items:center">
+
+<ul>
+<li>Invented by Gerd Binnig in 1986</li>
+<li>Allows the study of non-conductive samples</li>
+<li>Imaging</li>
+<li>Force measurement</li>
+<li>Manipulation</li>
+
+</ul>
+
+
+<div class="figure">
+<p><img src="../figures/bitmap/main-qimg-faf9c56728e3a1ec3b1447273727c1dd.png" alt="main-qimg-faf9c56728e3a1ec3b1447273727c1dd.png" height="500" />
+</p>
+</div>
+
+
+</div>
+
+<aside class="notes">
+<p>
+Developed by Binnig in 1986.  This allows the study of non-conductive
+materials.
+</p>
+
+<p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/AFMsetup.jpg/300px-AFMsetup.jpg" alt="300px-AFMsetup.jpg" />
+<a href="https://qph.fs.quoracdn.net/main-qimg-faf9c56728e3a1ec3b1447273727c1dd">https://qph.fs.quoracdn.net/main-qimg-faf9c56728e3a1ec3b1447273727c1dd</a>
+</p>
+
+<ul>
+<li>contact mode</li>
+<li>non-contact mode</li>
+<li>tapping mode</li>
+<li>force measurement</li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-org122c588">
+<h3 id="org122c588">Modes of operation</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/main-qimg-0234396b7fe97e0952c5e097c890f267.png" alt="main-qimg-0234396b7fe97e0952c5e097c890f267.png" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+<a href="https://qph.fs.quoracdn.net/main-qimg-0234396b7fe97e0952c5e097c890f267.webp">https://qph.fs.quoracdn.net/main-qimg-0234396b7fe97e0952c5e097c890f267.webp</a>
+</p>
+
+<p>
+<a href="http://www.chembio.uoguelph.ca/educmat/chm729/afm/details.htm#tapping">http://www.chembio.uoguelph.ca/educmat/chm729/afm/details.htm#tapping</a>
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org523c9d0">
+<h3 id="org523c9d0">Force measurement</h3>
+<aside class="notes">
+<p>
+The tip oscillates above the surface of the sample.  The interaction
+of the tip and the sample surface will cause the magnitude of the
+oscillation to change.  The height of the cantilever is then adjusted
+in order to preserve the amplitude of the oscillation.
+</p>
+
+</aside>
+
+<p>
+<img src="http://www.bioforce.uni-tuebingen.de/vids/fcsimulations/fcsim_mediumk.gif" alt="fcsim_mediumk.gif" />
+<img src="http://www.ammrf.org.au/myscope/images/spm/force_curves.png" alt="force_curves.png" />
+</p>
+
+<aside class="notes">
+<p>
+<img src="https://www.azonano.com/images/Article_Images/ImageForArticle_3010(5).jpg" alt="ImageForArticle_3010(5).jpg" />
+<img src="https://wiki.anton-paar.com/fileadmin/wiki/images/AFM/Force_distance_curve.png" alt="Force_distance_curve.png" />
+<img src="https://www.jpk.com/product-img/Atomic-Force-Microscopy/qi-mode-set-of-data-450.png" alt="qi-mode-set-of-data-450.png" />
+</p>
+
+</aside>
+</section>
+<section id="slide-orgfe1af2e">
+<h3 id="orgfe1af2e">Force curve</h3>
+
+<div class="figure">
+<p><img src="https://physik.uni-greifswald.de/fileadmin/uni-greifswald/fakultaet/mnf/physik/ag_helm/Methoden/AFM_force.gif" alt="AFM_force.gif" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="https://img.medscapestatic.com/article/775/164/775164-fig1.jpg" alt="775164-fig1.jpg" />
+</p>
+</div>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgb169c0a">
+<h2 id="orgb169c0a">Dip pen nanolithography</h2>
+
+<div class="figure">
+<p><img src="https://www.internano.org/sites/internano.org/files/images/dippen1.jpg" alt="dippen1.jpg" height="500" />
+</p>
+</div>
+
+</section>
+<section id="slide-org93c6748">
+<h3 id="org93c6748">Applications</h3>
+<video height="700" controls>
+<source  src="../videos/Future_Applications_of_DPN-XiU81VDQ4js.mp4" type="video/mp4" />
+</video>
+
+</section>
+<section id="slide-org14dabc9">
+<h3 id="org14dabc9">Characteristics</h3>
+<ul>
+<li>Technique allows the deposition of inks at nanometer scale</li>
+<li>Delivers molecules to a surface via a solvent meniscus which
+naturally forms in the ambient atmosphere</li>
+<li>resolution &asymp; 15 nm</li>
+<li>slow technique</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org64b1606">
+<h2 id="org64b1606">Summary</h2>
+<ul>
+<li>Scanning tunneling microscopy</li>
+<li>Piezoelectric effect</li>
+<li>Atomic force microscopy</li>
+<li>Dipped pen nanolithography</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="../reveal.js/lib/js/head.min.js"></script>
+<script src="../reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
