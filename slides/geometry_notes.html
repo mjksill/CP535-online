@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mathematical description of interfaces</title>
+<meta name="author" content="(L Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-orgc71e9e7">
+<h2 id="orgc71e9e7">Navigation instructions</h2>
+<ul>
+<li>Press <i class="fa fa-bars"></i> at the bottom
+left corner of the page to open a menu.
+<ul>
+<li>Jump to any slide within this presentation to clicking its title.</li>
+<li>Press <i class="fa fa-external-link-alt"></i> to
+navigate to another presentation.</li>
+
+</ul></li>
+<li>Press <a class="hide-on-pdf" onclick="document.location =
+  '?print-pdf';" id="PrintButton"><i class="fa fa-print"></i></a> to
+"print" a *.pdf of the presentation.</li>
+<li>Press <a onclick="showCaptions()" id="PrintButton"><i class="fa fa-closed-captioning"></i></a>
+to open a written transcript of the audio in the slides.</li>
+<li>Press the <code>SPACE</code> key to progress forward in the presentation.</li>
+<li>Use the <code>UP</code> / <code>DOWN</code> / <code>LEFT</code> / <code>RIGHT</code> arrow keys or the arrows in
+the bottom right corner of the page to navigate the presentation.</li>
+
+</ul>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org21e17d6">
+<h2 id="org21e17d6">CP535/970: Molecular and interfacial science</h2>
+<h2>Mathematical description of interfaces</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<p class="fragment" data-audio-src="interfaces/title.org"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org3a62347" data-audio-src="geometry/overview.ogg">
+<h2 id="org3a62347">Overview</h2>
+<ul>
+<li>Interfaces / surfaces</li>
+<li>Intermolecular forces</li>
+<li>Wetting</li>
+<li>Young-Laplace equation</li>
+<li>Shape of interfaces</li>
+<li>Summary</li>
+
+</ul>
+
+<aside class="notes">
+nil
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org9f8d264">
+<h2 id="org9f8d264">Shapes of interfaces</h2>
+<aside class="notes">
+nil
+</aside>
+
+
+</section>
+<section id="slide-org8a6a20e">
+<h3 id="org8a6a20e">Curves in space</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/s3.gif" alt="s3.gif" width="100%" />
+</p>
+</div>
+
+<aside class="notes">
+<p>
+curvature of a circle&#x2026;
+</p>
+
+<p>
+<a href="http://www.grad.hr/itproject_math/Links/sonja/gausseng/introduction/introduction.html">http://www.grad.hr/itproject_math/Links/sonja/gausseng/introduction/introduction.html</a>
+</p>
+
+
+<div class="figure">
+<p><img src="http://www.grad.hr/itproject_math/Links/sonja/gausseng/introduction/s3.gif" alt="s3.gif" />
+</p>
+</div>
+
+
+<p>
+curvature: need to relate the area to the curvature.
+Monge parameterization
+mean curvature, Gaussian curvature
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org3a833fe">
+<h3 id="org3a833fe">Curvature of surfaces</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/animacija2.gif" alt="animacija2.gif" height="500" />
+</p>
+</div>
+
+</section>
+<section id="slide-orga78aa7f">
+<h3 id="orga78aa7f">Curvature of surfaces</h3>
+<div style="background-color:lightblue">
+
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/ddg_principal_curvature.svg" class="org-svg" height="500">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+
+</div>
+
+</section>
+<section id="slide-orgebcdc2b">
+<h3 id="orgebcdc2b">Surfaces</h3>
+<div style="background-color:lightblue">
+
+<div class="row">
+<div class="column" style="float:left; width:50%">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/ddg_dome.svg" class="org-svg" height="300">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+
+<div class="column" style="float:right; width:50%">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/ddg_cylinder.svg" class="org-svg" height="300">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="column" style="float:center; width:100%">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/ddg_saddle.svg" class="org-svg" height="300">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgddc7748">
+<h2 id="orgddc7748">Young-Laplace equation</h2>
+
+<div class="figure">
+<p><img src="https://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2010/CS/b909101g/b909101g-f3.gif" alt="b909101g-f3.gif" height="500" />
+</p>
+</div>
+
+<div>
+\begin{align*}
+\Delta p &= \gamma\left(\frac{1}{R_1}+\frac{1}{R_2}\right)
+\end{align*}
+
+</div>
+
+
+</section>
+<section id="slide-org94d651f">
+<h3 id="org94d651f">Droplet shape</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/pendant_drop.jpg" alt="pendant_drop.jpg" height="500" />
+</p>
+</div>
+
+</section>
+<section id="slide-org91aa1b6">
+<h3 id="org91aa1b6">Surfaces of revolution</h3>
+<div style="background-color:lightblue">
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/surfaceofrevolution2.svg" class="org-svg" height="500">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
+</div>
+
+
+
+</section>
+<section id="slide-org48889bf">
+<h3 id="org48889bf">Overfilling a cup</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/maxresdefault.jpg" alt="maxresdefault.jpg" height="500" />
+</p>
+</div>
+
+
+<aside class="notes">
+<p>
+A nice demonstration of overfilling a cup is given in
+</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OeYYiSsPf4I">Science Mom's Guide to Water, Part 2 - Surface Tension</a>
+<ul>
+<li>0:22 - overfilling a cup:</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+
+</section>
+<section id="slide-orga3bbd81">
+<h3 id="orga3bbd81">Overfilling a cup</h3>
+
+<div class="figure">
+<p><img src="../figures/bitmap/mvhQK.png" alt="mvhQK.png" height="100%" />
+</p>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org4664bfb" data-audio-src="geometry/summary.ogg">
+<h2 id="org4664bfb">Summary</h2>
+<ul>
+<li>Interfacial / surface tension</li>
+<li>Wetting
+<ul>
+<li>contact angle</li>
+
+</ul></li>
+<li>Intermolecular forces
+<ul>
+<li>cohesive energy / adhesive energy</li>
+
+</ul></li>
+<li>Young-Laplace equation</li>
+<li>Capillary force</li>
+<li>Shape of interfaces</li>
+
+</ul>
+
+
+<aside class="notes">
+nil
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
+</script>
+</body>
+</html>
