@@ -22,6 +22,7 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
@@ -47,8 +48,8 @@
 
 
 <section>
-<section id="slide-orge108c20">
-<h2 id="orge108c20">Navigation instructions</h2>
+<section id="slide-org6b140cd">
+<h2 id="org6b140cd">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -72,8 +73,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgfff6945">
-<h2 id="orgfff6945">CP535: Molecular and interfacial science</h2>
+<section id="slide-orgeeeb65e">
+<h2 id="orgeeeb65e">CP535: Molecular and interfacial science</h2>
 <h2>Microscopic dynamics</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -93,127 +94,559 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgc0885da">
-<h2 id="orgc0885da">Overview</h2>
+<section id="slide-orgd762fb9">
+<h2 id="orgd762fb9">Overview</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-orgf237a99">
-<h2 id="orgf237a99">Classical mechanics</h2>
+<section id="slide-org0c3e89b">
+<h2 id="org0c3e89b">Classical mechanics</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org4796e40">
-<h2 id="org4796e40">Microstates</h2>
+<section id="slide-org7fd5533">
+<h2 id="org7fd5533">Microstates</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org9bcc44d">
-<h2 id="org9bcc44d">Phase space</h2>
+<section id="slide-org5bc2f0e">
+<h2 id="org5bc2f0e">Phase space</h2>
+
+<div class="figure">
+<p><object type="image/svg+xml" data="../figures/vector/phasespace.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgc4db3fe">
-<h2 id="orgc4db3fe">Density of state</h2>
+<section id="slide-orgea7415c">
+<h2 id="orgea7415c">Density of state</h2>
+<ul>
+<li>Volume element in phase space:</li>
+
+</ul>
+<div>
+\begin{equation*}
+d{\bf\Gamma} = \frac{1}{N!}
+d{\bf r}_1d{\bf p}_1 \cdots d{\bf r}_N d{\bf p}_N
+\end{equation*}
+
+</div>
+
+<ul>
+<li>The density of states \(g(N,V,E)\) is the number of ways the
+system can have an energy \(E\).  It is the ``volume'' of phase space
+with an energy \(E\).</li>
+
+<li>Mathematically, the density of states is given by</li>
+
+</ul>
+<div>
+\begin{equation*}
+g(N,V,E) = \int_{E < H({\bm\Gamma})<E+\delta E} d{\bm\Gamma} 
+\end{equation*}
+
+</div>
+<p>
+where \(\delta E\ll E\).
+</p>
 
 </section>
 </section>
 <section>
-<section id="slide-orgfa2caa9">
-<h2 id="orgfa2caa9">Quantum mechanics</h2>
+<section id="slide-org87815f3">
+<h2 id="org87815f3">Quantum mechanics</h2>
+<ul>
+<li>The state of a system is characterized by a function (abstract
+vector): the wave function.  For a system of \(N\) particles:
+\(\psi({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)\)</li>
+
+<li>The wave function is a continuous and smooth function of the
+particle positions.</li>
+
+<li>Joint probability distribution that a particle is at position
+\({\bf r}_1\), \({\bf r}_2\), &hellip;, \({\bf r}_N\) is</li>
+
+</ul>
+<div>
+\begin{align*}
+P({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N) 
+&\propto |\psi({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)|^2
+\\
+&= \psi^*({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)
+\psi({\bf r}_1, {\bf r}_2,\dots,{\bf r}_N)
+\end{align*}
+
+</div>
+
+<ul>
+<li>The properties of the system are determined by operators on the
+wave function.</li>
+
+</ul>
+
+
 
 </section>
 </section>
 <section>
-<section id="slide-org209e51b">
-<h2 id="org209e51b">Observables and operators</h2>
+<section id="slide-org327fd9d">
+<h2 id="org327fd9d">Observables and operators</h2>
+<p>
+Operators map a function (state) to another function (state)
+</p>
+<div>
+\begin{equation*}
+\hat{A} \psi({\bf r}) = \phi({\bf r})
+\end{equation*}
+
+</div>
+
+<p>
+Average value:
+</p>
+<div>
+\begin{equation*}
+\langle A\rangle
+= \int d{\bf r} \psi^*({\bf r}) \hat{A} \psi({\bf r})
+%= \frac{\langle\psi|\hat{A}|\psi\rangle}{\langle\psi|\psi\rangle}
+\end{equation*}
+
+</div>
+
+<p>
+Eigenstates of \(\hat{A}\):
+</p>
+<div>
+\begin{equation*}
+\hat{A}\psi_\alpha({\bf r}) = A_\alpha \psi_\alpha({\bf r})
+\end{equation*}
+
+</div>
+
+<p>
+Momentum operator
+</p>
+<div>
+\begin{align*}
+\hat{p}_z \psi(z) 
+= -i\hbar \frac{\partial}{\partial z} \psi(z) 
+\qquad\qquad
+\hat{\bf p} \psi({\bf r})
+= -i\hbar \nabla \psi({\bf r})
+\end{align*}
+
+</div>
+
 
 </section>
 </section>
 <section>
-<section id="slide-org1283f1d">
-<h2 id="org1283f1d">Schrodinger equation</h2>
-</section>
-</section>
-<section>
-<section id="slide-org1e79bdf">
-<h2 id="org1e79bdf">Mixed states</h2>
+<section id="slide-org66d1b6e">
+<h2 id="org66d1b6e">Schrodinger equation</h2>
+<p>
+Hamiltonian:
+</p>
+<div>
+\begin{equation*}
+\hat{H}
+= \left[- \frac{\hbar^2}{2m} \nabla^2 + V({\bf r}) \right]
+\end{equation*}
+
+</div>
+
+<p>
+Time independent Schr\"odinger equation:
+</p>
+<div>
+\begin{equation*}
+\left[- \frac{\hbar^2}{2m} \nabla^2 + V({\bf r}) \right]\psi({\bf r}) 
+= E \psi({\bf r}) 
+\end{equation*}
+
+</div>
+<p>
+where \(V({\bf r})\) is the potential energy.
+</p>
+
+<p>
+Time dependent Schr\"odinger equation:
+</p>
+<div>
+\begin{equation*}
+\frac{\partial}{\partial t} \psi({\bf r},t)
+= - \frac{i}{\hbar}\hat{H}\psi({\bf r},t)
+\end{equation*}
+
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-org02dcdca">
-<h2 id="org02dcdca">Free particle</h2>
+<section id="slide-org358ad5f">
+<h2 id="org358ad5f">Mixed states</h2>
+<ul>
+<li>Eigenfunctions and eigenvalues of \(\hat{A}\):</li>
+
+</ul>
+<p>
+\(\psi_\alpha({\bf r})\) and \(A_\alpha\)
+</p>
+
+<ul>
+<li>The wave function can be expanded in terms of eigenfunctions</li>
+
+</ul>
+<div>
+\begin{align*}
+\psi({\bf r}) = \sum_\alpha c_\alpha \psi_\alpha({\bf r})
+\end{align*}
+
+</div>
+
+<ul>
+<li>Probability of being in state \(\alpha\): \(|c_\alpha|^2\)</li>
+
+</ul>
 
 </section>
 </section>
 <section>
-<section id="slide-orgea8a7d7">
-<h2 id="orgea8a7d7">Particle in a box</h2>
+<section id="slide-org96f8d08">
+<h2 id="org96f8d08">Free particle</h2>
+<ul>
+<li>Schr\"odinger equation</li>
+
+</ul>
+<div>
+\begin{equation*}
+-\frac{\hbar^2}{2m} \frac{\partial^2 \psi(z)}{\partial z^2} 
+= E \psi(z)
+\end{equation*}
+
+</div>
+<ul>
+<li>Wave function</li>
+
+</ul>
+<div>
+\begin{equation*}
+\psi_k(z) =  (2\pi)^{-1/2} e^{ikz} 
+\end{equation*}
+
+</div>
+<ul>
+<li>Momentum: \(p_z = \hbar k\)</li>
+<li>Energy: \(\displaystyle E_k = \frac{\hbar^2 k^2}{2m} =  \frac{p_z^2}{2m}\)</li>
+
+</ul>
+
 
 </section>
 </section>
 <section>
-<section id="slide-orgc183c1f">
-<h2 id="orgc183c1f">Wave function and particle density</h2>
+<section id="slide-orgcaa7324">
+<h2 id="orgcaa7324">Particle in a box</h2>
+<ul>
+<li>Schr\"odinger equation</li>
+
+</ul>
+<div>
+\begin{equation*}
+-\frac{\hbar^2}{2m} \frac{\partial^2 \psi(z)}{\partial z^2} 
+= E \psi(z)
+\end{equation*}
+
+</div>
+<p>
+with boundary conditions
+</p>
+<div>
+\begin{equation*}
+\psi(0) = 0 \qquad\mbox{and}\qquad \psi(L)=0
+\end{equation*}
+
+</div>
+<ul>
+<li>Wave function</li>
+
+</ul>
+<div>
+\begin{equation*}
+\psi_k(z) = \left(\frac{2}{L}\right)^{1/2} \sin\left(\frac{\pi n z}{L}\right) 
+= \left(\frac{2}{L}\right)^{1/2} \sin kz
+\end{equation*}
+
+</div>
+<p>
+where \(n=0\), \(1\), \(2\),&hellip;
+</p>
+<ul>
+<li>Energy</li>
+
+</ul>
+<div>
+\begin{equation*}
+E_k = \frac{\hbar^2}{2m} \left(\frac{\pi n}{L}\right)^2
+= \frac{\hbar^2 k^2}{2m} 
+\end{equation*}
+
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgf028ec8">
-<h2 id="orgf028ec8">Particle in a 3D box</h2>
-<div class="outline-text-2" id="text-orgf028ec8">
+<section id="slide-org93b03d0">
+<h2 id="org93b03d0">Wave function and particle density</h2>
+<p>
+<a href="../figures/box1d.pdf">../figures/box1d.pdf</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org46301db">
+<h2 id="org46301db">Particle in a 3D box</h2>
+<ul>
+<li>wavefunction</li>
+
+</ul>
+<div>
+\begin{equation*}
+\psi_{\bf k}({\bf r})
+= \left(\frac{2}{L_x}\frac{2}{L_y}\frac{2}{L_z}\right)^{1/2}
+\sin k_xx \sin k_yy \sin k_zz
+\end{equation*}
+
+</div>
+<p>
+where \(k_x=\pi n_x/L_x\), \(k_y=\pi n_y/L_y\), and \(k_z=\pi n_z/L_z\).
+</p>
+<ul>
+<li>energy levels</li>
+
+</ul>
+<div>
+\begin{align*}
+E_{\bf k} &= \frac{\hbar^2}{2m} \left[
+  \left(\frac{\pi n_x}{L_x}\right)^2
+  + \left(\frac{\pi n_y}{L_y}\right)^2
+  + \left(\frac{\pi n_z}{L_z}\right)^2
+\right]
+\\
+&= \frac{\hbar^2 k^2}{2m} 
+\end{align*}
+
+</div>
+<p>
+where \(k^2=k_x^2+k_y^2+k_z^2\).
+</p>
+
+
+</section>
+<section id="slide-org49b157a">
+<h3 id="org49b157a">Particle densities</h3>
+
+
+</section>
+<section id="slide-orgf1700bc">
+<h3 id="orgf1700bc">Energy levels</h3>
+</section>
+<section id="slide-org4473a34">
+<h3 id="org4473a34">Density of states</h3>
+</section>
+<section id="slide-orge2be9f3">
+<h3 id="orge2be9f3">Quantum effects of confinement</h3>
+</section>
+</section>
+<section>
+<section id="slide-org38f729e">
+<h2 id="org38f729e">Hydrogen-like atoms</h2>
+<div class="outline-text-2" id="text-org38f729e">
 </div>
 </section>
-<section id="slide-orgd28142c">
-<h3 id="orgd28142c">Particle densities</h3>
-</section>
-<section id="slide-org9550968">
-<h3 id="org9550968">Energy levels</h3>
-</section>
-<section id="slide-org5d3b7a5">
-<h3 id="org5d3b7a5">Density of states</h3>
-</section>
-<section id="slide-org82a94c2">
-<h3 id="org82a94c2">Quantum effects of confinement</h3>
-</section>
-</section>
-<section>
-<section id="slide-orgb791f66">
-<h2 id="orgb791f66">Hydrogen-like atoms</h2>
-<div class="outline-text-2" id="text-orgb791f66">
+<section id="slide-orge449569">
+<h3 id="orge449569">Wave function</h3>
+
+<div class="figure">
+<p><img src="../figures/Single_electron_orbitals.png" alt="Single_electron_orbitals.png" />
+</p>
 </div>
-</section>
-<section id="slide-org87da765">
-<h3 id="org87da765">Wave function</h3>
+
 </section>
 </section>
 <section>
-<section id="slide-orgd4a9fc7">
-<h2 id="orgd4a9fc7">Barrier potential</h2>
-<div class="outline-text-2" id="text-orgd4a9fc7">
+<section id="slide-orgb853dc2">
+<h2 id="orgb853dc2">Barrier potential</h2>
+
+<div class="figure">
+<p><img src="../figures/tunneling.png" alt="tunneling.png" />
+</p>
 </div>
+
+<div>
+\begin{equation*}
+- \frac{\hbar^2}{2m} \frac{\partial^2\psi(z)}{\partial z^2}
++ V(z) \psi(z) = E \psi(z)
+\end{equation*}
+
+</div>
+
+<ul>
+<li>momentum: \(\hbar k_0\)</li>
+<li>kinetic energy: \(E = \frac{\hbar^2k_0^2}{2m}\)</li>
+
+</ul>
+
+
 </section>
-<section id="slide-org05d4e12">
-<h3 id="org05d4e12">Particle wave function</h3>
+<section id="slide-orged6627c">
+<h3 id="orged6627c">Particle wave function</h3>
+<p>
+Schr\"odinger equation
+</p>
+<div>
+\begin{align*}
+- \frac{\hbar^2}{2m} \frac{\partial^2\psi(z)}{\partial z^2}
++ V(z) \psi(z) &= E \psi(z)
+\end{align*}
+
+</div>
+
+<p>
+Solution
+</p>
+<div>
+\begin{align*}
+\psi(z) = \left\{
+\begin{array}{ll}
+  e^{ik_0z} + r e^{-ik_0z} & \mbox{for $z < 0$} \\
+A e^{ikz} + B e^{-ikz} & \mbox{for $0<z<d$} \\
+t e^{ik_0z} & \mbox{for $d<z$} \\
+\end{array}
+\right.
+\end{align*}
+
+</div>
+<p>
+where \(k=(2m(E-V_0)/\hbar^2)^{1/2}\).
+</p>
+
 </section>
-<section id="slide-org937fc89">
-<h3 id="org937fc89">Restrictions on the wave function</h3>
+<section id="slide-org91eb244">
+<h3 id="org91eb244">Restrictions on the wave function</h3>
+<p>
+The wave function must be smooth:
+</p>
+<div>
+\begin{align*}
+\psi(0^-) &= \psi(0^+)
+\qquad
+\psi'(0^-) = \psi'(0^+)
+\\
+\psi(d^-) &= \psi(d^+)
+\qquad
+\psi'(d^-) = \psi'(d^+)
+.
+\end{align*}
+
+</div>
+
+<p>
+Solution:
+</p>
+<div>
+\begin{align*}
+A &= \frac{2k_0(k+k_0) e^{-ikd}}{4kk_0\cos kd- 2i(k^2+k_0^2)\sin kd} 
+\\
+B &= \frac{2k_0(k-k_0) e^{+ikd}}{4kk_0\cos kd - 2i(k^2+k_0^2)\sin kd} 
+\\
+r &= \frac{(k_0^2-k^2)\sin kd}{(k^2+k_0^2)\sin kd + 2ikk_0\cos kd}
+\\
+t &= \frac{2i kk_0e^{-ik_0d}}{(k^2+k_0^2)\sin kd + 2ikk_0\cos kd}
+\end{align*}
+
+</div>
+
 </section>
-<section id="slide-orgd1d47b7">
-<h3 id="orgd1d47b7">Transmission and reflection of particles</h3>
+<section id="slide-org0c813ee">
+<h3 id="org0c813ee">Transmission and reflection of particles</h3>
+<div>
+\begin{align*}
+\psi(z) = \left\{
+\begin{array}{ll}
+  e^{ik_0z} + r e^{-ik_0z} & \mbox{for $z < 0$} \\
+A e^{ikz} + B e^{-ikz} & \mbox{for $0<z<d$} \\
+t e^{ik_0z} & \mbox{for $d<z$} \\
+\end{array}
+\right.
+\end{align*}
+
+</div>
+
+<p>
+Fraction transmitted
+</p>
+<div>
+\begin{align*}
+|t|^2 =
+\left[
+   1 + \frac{V_0^2}{4E(V_0-E)}\sinh^2 \kappa d
+\right]^{-1}
+\end{align*}
+
+</div>
+
+<p>
+Fraction reflected
+</p>
+<div>
+\begin{align*}
+|r|^2 = 1 -
+\left[
+   1 + \frac{V_0^2}{4E(V_0-E)}\sinh^2 \kappa d
+\right]^{-1}
+\end{align*}
+
+</div>
+
 </section>
-<section id="slide-orgf64eedc">
-<h3 id="orgf64eedc">Transmission</h3>
+<section id="slide-org5676238">
+<h3 id="org5676238">Transmission</h3>
+
+<div class="figure">
+<p><img src="../figures/transmission.png" alt="transmission.png" />
+</p>
+</div>
+
 </section>
 </section>
 <section>
-<section id="slide-orge9314c2">
-<h2 id="orge9314c2">Summary</h2>
+<section id="slide-orgf232591">
+<h2 id="orgf232591">Summary</h2>
+<ul>
+<li>Classical mechanics
+<ul>
+<li>states</li>
+<li>phase space</li>
+
+</ul></li>
+<li>Quantum mechanics
+<ul>
+<li>wave function</li>
+<li>free particle</li>
+<li>particle in a box</li>
+<li>density of states</li>
+<li>tunneling</li>
+
+</ul></li>
+
+</ul>
 </section>
 </section>
 </div>

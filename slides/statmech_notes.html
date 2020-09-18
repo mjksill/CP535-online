@@ -22,6 +22,7 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
@@ -46,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org3a7486f">
-<h2 id="org3a7486f">Navigation instructions</h2>
+<section id="slide-orgbe79e03">
+<h2 id="orgbe79e03">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -72,8 +73,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgbdc3539">
-<h2 id="orgbdc3539">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-org5795cf5">
+<h2 id="org5795cf5">CP535/970: Molecular and interfacial science</h2>
 <h2>Statistical mechanics</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -84,8 +85,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org6da7465" data-audio-src="statmech/overview.ogg">
-<h2 id="org6da7465">Overview</h2>
+<section id="slide-org2870a14" data-audio-src="statmech/overview.ogg">
+<h2 id="org2870a14">Overview</h2>
 <ul>
 <li>Basic concepts</li>
 <li>Connecting microscopic with macroscopic</li>
@@ -99,14 +100,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org10a02aa">
-<h2 id="org10a02aa">Phase space</h2>
-
-</section>
-</section>
-<section>
-<section id="slide-org2ffffc1">
-<h2 id="org2ffffc1">Density of states</h2>
+<section id="slide-org9ac7177">
+<h2 id="org9ac7177">Phase space</h2>
 
 <div class="figure">
 <p><img src="../figures/phasespace.png" alt="phasespace.png" />
@@ -116,50 +111,86 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org9c2b347">
-<h2 id="org9c2b347">Basic concepts</h2>
+<section id="slide-org0fd12e4">
+<h2 id="org0fd12e4">Density of states</h2>
+<ul>
+<li>Volume element in phase space:</li>
+
+</ul>
+<div>
+\begin{equation*}
+d{\bm\Gamma} = \frac{1}{N!}
+\frac{d{\bf r}_1d{\bf p}_1}{h^3}\cdots \frac{d{\bf r}_N d{\bf p}_N}{h^3}
+\end{equation*}
+
+</div>
+<p>
+where \(h\) is Planck's constant.
+</p>
+<ul>
+<li>The density of states \(g(N,V,E)\) is the number of ways the
+system can have an energy \(E\).  It is the ``volume'' of phase space
+with an energy \(E\).</li>
+<li>Mathematically, the density of states is given by</li>
+
+</ul>
+<div>
+\begin{equation*}
+g(N,V,E) = \int_{E < H({\bm\Gamma})<E+\delta E} d{\bm\Gamma} 
+\end{equation*}
+
+</div>
+<p>
+where \(\delta E\ll E\).
+</p>
 
 </section>
 </section>
 <section>
-<section id="slide-orgef6accd">
-<h2 id="orgef6accd">Canonical ensemble</h2>
+<section id="slide-orgbd95f03">
+<h2 id="orgbd95f03">Basic concepts</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org14f4f41">
+<h2 id="org14f4f41">Canonical ensemble</h2>
 <aside class="notes">
 nil
 </aside>
 
 </section>
-<section id="slide-orge173f8c">
-<h3 id="orge173f8c">Enumerating phase space</h3>
+<section id="slide-orga9508c4">
+<h3 id="orga9508c4">Enumerating phase space</h3>
 <aside class="notes">
 nil
 </aside>
 
 
 </section>
-<section id="slide-org680a730">
-<h3 id="org680a730">Barometric formula</h3>
+<section id="slide-orgbe7dee4">
+<h3 id="orgbe7dee4">Barometric formula</h3>
 <aside class="notes">
 nil
 </aside>
 
 </section>
-<section id="slide-org5209a57">
-<h3 id="org5209a57">Maxwell-Boltzmann velocity distribution</h3>
+<section id="slide-orgad6e165">
+<h3 id="orgad6e165">Maxwell-Boltzmann velocity distribution</h3>
 <aside class="notes">
 nil
 </aside>
 
 </section>
-<section id="slide-org2a11abe">
-<h3 id="org2a11abe">Maxwell-Boltzmann speed distribution</h3>
+<section id="slide-orgceb80be">
+<h3 id="orgceb80be">Maxwell-Boltzmann speed distribution</h3>
 <aside class="notes">
 nil
 </aside>
 
 </section>
-<section id="slide-org5d99774">
-<h3 id="org5d99774">Classical ideal gas</h3>
+<section id="slide-orgdb3b350">
+<h3 id="orgdb3b350">Classical ideal gas</h3>
 <aside class="notes">
 nil
 </aside>
@@ -167,8 +198,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org6f32b48">
-<h2 id="org6f32b48">Grand canonical ensemble</h2>
+<section id="slide-org7271172">
+<h2 id="org7271172">Grand canonical ensemble</h2>
 <aside class="notes">
 nil
 </aside>
@@ -177,8 +208,8 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgec5b800" data-audio-src="statmech/summary.ogg">
-<h2 id="orgec5b800">Summary</h2>
+<section id="slide-org61ab628" data-audio-src="statmech/summary.ogg">
+<h2 id="org61ab628">Summary</h2>
 <ul>
 <li>Phase space</li>
 <li>Density of states and entropy</li>
