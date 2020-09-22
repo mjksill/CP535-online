@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org19ec444">
-<h2 id="org19ec444">Navigation instructions</h2>
+<section id="slide-org1a6f362">
+<h2 id="org1a6f362">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -73,22 +73,22 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org8f41ca8">
-<h2 id="org8f41ca8">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-org4de8b33" data-audio-src="interfaces/title.ogg">
+<h2 id="org4de8b33">CP535/970: Molecular and interfacial science</h2>
 <h2>Surfaces and interfaces</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
-<p class="fragment" data-audio-src="interfaces/title.org"></p>
 
-<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
-
+<aside class="notes">
+nil
+</aside>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org84caf99" data-audio-src="interfaces/overview.ogg">
-<h2 id="org84caf99">Overview</h2>
+<section id="slide-org789afbe" data-audio-src="interfaces/overview.ogg">
+<h2 id="org789afbe">Overview</h2>
 <ul>
 <li>Interfaces / surfaces</li>
 <li>Intermolecular forces</li>
@@ -98,9 +98,33 @@ the bottom right corner of the page to navigate the presentation.</li>
 
 </ul>
 
+
 <aside class="notes">
 <p>
 
+</p>
+
+<p>
+We first describe the qualitative aspects of interfaces, and then
+discuss their physical consequences.  From a macroscopic perspective,
+this mainly the interfacial energy and interfacial tension.
+</p>
+
+<p>
+This will be followed by an examination of the molecular origin of the
+interfacial free energy, which is a consequence of imbalance of the
+forces between molecules.
+</p>
+
+
+<p>
+The presence of a surface energy will cause a difference between the
+pressure on either side of the interface.  This is governed by the
+Young-Laplace equation
+</p>
+
+<p>
+Finally, the main points of the lecture will be summarized.
 </p>
 
 </aside>
@@ -108,8 +132,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org5411171">
-<h2 id="org5411171">Interfaces and surfaces</h2>
+<section id="slide-org492f9c4">
+<h2 id="org492f9c4">Interfaces and surfaces</h2>
 
 <div class="figure">
 <p><img src="../figures/bitmap/SurfacesAndInterfaces.png" alt="SurfacesAndInterfaces.png" height="400" />
@@ -163,8 +187,8 @@ behavior of the system.
 </aside>
 
 </section>
-<section id="slide-org315ba38">
-<h3 id="org315ba38">Interfacial / surface tension</h3>
+<section id="slide-orgf4a5963">
+<h3 id="orgf4a5963">Interfacial / surface tension</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/RTEmagicC_Groesse_Oberflaechenspannung1-E_10.jpg.jpg" alt="RTEmagicC_Groesse_Oberflaechenspannung1-E_10.jpg.jpg" height="500" />
@@ -179,31 +203,38 @@ behavior of the system.
 
 <p>
 Let's examine an interface between air and water.  There is fairly
-strong attractive interaction between water molecule, and it is this
-attraction that leads water molecules to 
+strong attractive interaction between water molecule; it is this
+attraction that leads water molecules to aggregate together to form a
+liquid, at room temperature and atmospheric pressure.
 </p>
 
 <p>
-Let's examine the forces acting on a water molecule.
+Let's examine the forces acting on a water molecule.  Within the bulk
+of the liquid, we see that a water molecule is fully surrounded by
+other water molecules.  It is equally attracted to each of these
+molecules, and because these molecules are uniformly distributed (on
+average) around it, there is a balance of forces.  There is no net
+tendency for it to move in any particular direction.
 </p>
 
 <p>
-Within the bulk of the liquid, we see that a water molecule is fully
-surrounded by other molecules, and as a result there is a balance of
-forces.  There is no net tendency for it to move in any particular
-direction.
-</p>
-
-<p>
-A water molecule near the interface still feels the attraction of
-other molecules towards the
+Now let's consider a water molecule near the interface.  It still
+feels the attraction of the other water molecules towards the left and
+right and towards the interior of the liquid phase; however, because
+the lack of molecules in the air, due to its much lower density and
+the weaker attraction of water for these species, there is no pull of
+the water molecule into the gas phase.  As a result, there is an
+imbalance of forces on water molecules near the surface which tends to
+pull them back into the bulk of the liquid.  This is only stopped by
+the excluded volume interactions between molecules (i.e. the tendency
+for molecules not to overlap each other).
 </p>
 
 </aside>
 
 </section>
-<section id="slide-org30c3962">
-<h3 id="org30c3962">Surface tension</h3>
+<section id="slide-orga1b37b7">
+<h3 id="orga1b37b7">Surface tension</h3>
 <div class="container" style="display:flex; justify-content:center; align-items:center">
 <div class="column" style="float:left; width:60%">
 
@@ -231,23 +262,56 @@ dW &= {\bf F} \cdot d{\bf r}
 
 </p>
 
-<ul>
-<li>energy of creating an interface</li>
-<li>molecular origin of interfacial energy</li>
-<li></li>
-
-</ul>
+<p>
+The macroscopic consequence of this lack of attractive interactions
+due to the presence of a surface is that it appears that liquids try
+to minimize their surface area.  This is why water droplets tend to be
+spherical, as a sphere is the shape that has the minimum surface area
+for a given volume.
+</p>
 
 <p>
-surface/interfacial tension&#x2026; This is the free energy (or work) per
-unit area required to create an interface.  
+To quantify this physical observation, we say that there is an energy
+cost, or more precisely, a free energy cost, for creating an
+interface, which we expect to be proportional to the area of the
+interface.  We call this the surface/interfacial free energy.  This is
+the free energy (or work) per unit area required to create an
+interface.  That is \(dW = \gamma dA\), where \(\gamma\) is the
+interfacial free energy.
+</p>
+
+<p>
+In order to get a better physical feel of what this means, consider a
+thin film of liquid that is being stretched across a wire frame.
+Across the frame is a moveable link of length \(l\), which can be used
+to increase or decrease the area of the liquid film.
+</p>
+
+<p>
+If we move the link by a small distance \(dx\) to the right, then the
+area of the liquid film will increase by \(2ldx\) (note that there are
+two surface on the film: the upper surface and the lower surface).
+From our ideas about the interfacial free energy, we say that the work
+required to form this additional amount of interface is \(\gamma 2l
+dx\).
+</p>
+
+<p>
+Recall that the mechanical work performed by a force is equal to its
+magnitude multiplied by the displacement over which it acts.  
+</p>
+
+<p>
+As a result of this link between work and force, the interfacial free
+energy is also known as the interfacial tension, which has units of
+force per unit length.
 </p>
 
 </aside>
 
 </section>
-<section id="slide-orgdf1a44d">
-<h3 id="orgdf1a44d">Typical values of surface tension</h3>
+<section id="slide-orgd530ae9">
+<h3 id="orgd530ae9">Typical values of surface tension</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -268,7 +332,7 @@ unit area required to create an interface.
 <tr>
 <th scope="col" class="org-left">&#xa0;</th>
 <th scope="col" class="org-right">mN m<sup>-1</sup></th>
-<th scope="col" class="org-right">$^&circ;$C</th>
+<th scope="col" class="org-right">\(^\circ{\rm C}\)</th>
 </tr>
 </thead>
 <tbody>
@@ -309,6 +373,12 @@ unit area required to create an interface.
 </tr>
 
 <tr>
+<td class="org-left">1-butanol</td>
+<td class="org-right">24.57</td>
+<td class="org-right">20</td>
+</tr>
+
+<tr>
 <td class="org-left">1-octanol</td>
 <td class="org-right">27.60</td>
 <td class="org-right">20</td>
@@ -323,9 +393,33 @@ unit area required to create an interface.
 </table>
 
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Here we present some values for the surface tension of various liquids
+at room temperature.  Remember that the surface tension is a result of
+the imbalance between attractive interaction between molecules near
+its surface.  As a consequence, we expect that the surface tension
+will be larger for molecules with greater attractive interactions.
+So, we see that we can use the surface tension as a quantitative
+indication of the magnitude of interactions between molecules.  We
+will discuss this later.
+</p>
+
+<p>
+We see that molecules like water and glycerol that have multiple site
+for hydrogen bonding and can form hydrogen bond networks have much
+higher surface tensions than other non-polar compounds.  While alcohols
+</p>
+
+</aside>
+
 </section>
-<section id="slide-org36be051">
-<h3 id="org36be051">Typical values of surface tension</h3>
+<section id="slide-org81371a6">
+<h3 id="org81371a6">Typical values of surface tension</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -346,7 +440,7 @@ unit area required to create an interface.
 <tr>
 <th scope="col" class="org-left">&#xa0;</th>
 <th scope="col" class="org-right">mN m<sup>-1</sup></th>
-<th scope="col" class="org-right">$^&circ;$C</th>
+<th scope="col" class="org-right">\(^\circ{\rm C}\)</th>
 </tr>
 </thead>
 <tbody>
@@ -382,9 +476,27 @@ unit area required to create an interface.
 </tbody>
 </table>
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Here we present some surface tension values for molten salts and
+metals, along with that for water and n-octane for comparison.  These
+values are much larger than for those values we found in the previous
+table, and this reflects the very strong interactions between atoms in
+these liquids.  We might expect this for the case of sodium chloride
+and iron, as these compounds have such strong interactions between
+their constituent atoms that they are solid at normal conditions.
+</p>
+
+</aside>
+
+
 </section>
-<section id="slide-orga661a3b">
-<h3 id="orga661a3b">Surface tension of alkanes</h3>
+<section id="slide-orgf3653d0">
+<h3 id="orgf3653d0">Surface tension of alkanes</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -426,13 +538,13 @@ unit area required to create an interface.
 </tr>
 
 <tr>
-<td class="org-left">n-dodecane</td>
-<td class="org-right">25.35</td>
+<td class="org-left">n-undecane</td>
+<td class="org-right">24.66</td>
 </tr>
 
 <tr>
-<td class="org-left">n-undecane</td>
-<td class="org-right">24.66</td>
+<td class="org-left">n-dodecane</td>
+<td class="org-right">25.35</td>
 </tr>
 
 <tr>
@@ -447,9 +559,27 @@ unit area required to create an interface.
 </tbody>
 </table>
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+As we mentioned previously, the surface tension is a reflection of the
+forces between the molecules in a liquid.
+</p>
+
+<p>
+Here we see that the surface tension of alkanes increases with their
+molecular weight.
+</p>
+
+</aside>
+
+
 </section>
-<section id="slide-org0356a7f">
-<h3 id="org0356a7f">Interfacial tension</h3>
+<section id="slide-org90aecbb">
+<h3 id="org90aecbb">Interfacial tension</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -507,9 +637,33 @@ unit area required to create an interface.
 </tbody>
 </table>
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+So far, we have only been discussing surface tension, where there is
+an interface between a liquid and a gas.  For those systems, only the
+interactions between the molecules in the liquid are important, as the
+density of molecules in the gas phase are typically much lower than in
+the liquid and do not really interact significantly with the liquid.
+</p>
+
+<p>
+Here we examine the interfacial tension between two liquid phases: in
+this case, water and a hydrocarbon.  Interesting, we see here that the
+value of the interfacial tension, the work to create an interface
+between water and "oil", lies between the value of the surface tension
+of water and that of the hydrocarbon.
+</p>
+
+</aside>
+
+
 </section>
-<section id="slide-orgc90f250">
-<h3 id="orgc90f250">Interfacial tension</h3>
+<section id="slide-org25c6d50">
+<h3 id="org25c6d50">Interfacial tension</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -552,10 +706,28 @@ unit area required to create an interface.
 </tbody>
 </table>
 
+<aside class="notes">
+<p>
+Here we see the interfacial tension between water and some other
+compounds, with the interfacial tension between water and hexane shown
+as a reference.
+</p>
+
+<p>
+We see that interfacial tension between water and butanol and between
+water and benzene is lower than the surface tension of either of the
+pure components.  So, we get the idea that perhaps the interfacial
+tension is about compatibility between the different types of
+molecules.  It is the consequence of the difference between the
+intermolecular forces between different types of molecules.
+</p>
+
+</aside>
+
 
 </section>
-<section id="slide-orgf8e11ff">
-<h3 id="orgf8e11ff">Measurement of surface tension</h3>
+<section id="slide-orgc9c12a8">
+<h3 id="orgc9c12a8">Measurement of surface tension</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/1-s2.0-S002197971500466X-gr1.jpg" alt="1-s2.0-S002197971500466X-gr1.jpg" height="500" />
@@ -563,12 +735,23 @@ unit area required to create an interface.
 </div>
 
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+In this slide, we show some different ways that surface tension can be
+experimentally measured.  
+</p>
+
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-org88d2688">
-<h2 id="org88d2688">Intermolecular forces</h2>
+<section id="slide-orga35bc41">
+<h2 id="orga35bc41">Intermolecular forces</h2>
 <div style="display:flex; justify-content:center; align-items:center">
 
 <div class="figure">
@@ -590,12 +773,23 @@ unit area required to create an interface.
 
 
 <aside class="notes">
-nil
+<p>
+As we mentioned previously, the interfacial tension is a reflection of
+the forces between molecules.  Now we will try to be more quantitative
+in this statement, and try to make estimates on the magnitude of these
+interaction energies.
+</p>
+
+<p>
+The forces between molecules that are relevant for the physical and
+chemical properties of materials all originate from the 
+</p>
+
 </aside>
 
 </section>
-<section id="slide-org5d03ec0">
-<h3 id="org5d03ec0">Cohesion</h3>
+<section id="slide-org1dccefd">
+<h3 id="org1dccefd">Cohesion</h3>
 <div>
 \begin{align*}
 W_{11} &= 2\gamma_1
@@ -605,26 +799,33 @@ W_{11} &= 2\gamma_1
 
 <aside class="notes">
 <p>
-For water, we have a cohesion free energy of 145.6 mJ\,m<sup>-2</sup>, while for
-n-octane we have 43.24 mJ\,m<sup>-2</sup>.
-(* 2 72.80)
-(* 2 21.62)
+
 </p>
 
-<ul>
-<li><a href="https://www.youtube.com/watch?v=P_jQ1B9UwpU">Viscosity, Cohesive and Adhesive Forces, Surface Tension, and Capillary Action</a>
-<ul>
-<li>give a bit of an explanation of cohesion &amp; adhesion</li>
+<p>
+The first concept we want to introduce is the cohesion free energy or
+the work of cohesion.  This is the work required to take a bulk
+material and cut it into two pieces.  This is a measure of the
+strength of the intermolecular forces that hold a material together.  
+</p>
 
-</ul></li>
+<p>
+In cutting a material in half, we just form two interfaces.  Per
+cross-sectional area, this work is just twice the surface tension of
+the material.  So, surface tension can be thought of as characterizing
+the strength of a material.
+</p>
 
-</ul>
+<p>
+For water, we have a cohesion free energy of 145.6 mJ\,m<sup>-2</sup>, while for
+n-octane we have 43.24 mJ\,m<sup>-2</sup>.
+</p>
 
 </aside>
 
 </section>
-<section id="slide-org6c8cb59">
-<h3 id="org6c8cb59">Estimate of cohesion energy</h3>
+<section id="slide-org5bb0f83">
+<h3 id="org5bb0f83">Estimate of cohesion energy</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -735,11 +936,36 @@ W &\approx \frac{1}{4} \rho^{2/3} \Delta U
 
 </div>
 
+<aside class="notes">
+<p>
+Given this idea that the surface tension has something to do with the
+strength of a material, we can try to estimate it from thermodynamic
+properties.
+</p>
+
+<p>
+When a liquid begins to boil, we take molecules from a liquid
+environment where they are surrounded by molecules that they are
+fairly attracted to a vapor phase where the molecules rarely interact
+with each other.  Thus, we expect that the enthalpy of vaporization will
+quantify this attractive energy.
+</p>
+
+<p>
+we need to subtract the work of expansion.
+</p>
+
+<p>
+We estimate that each molecule on the surface loses about an eighth of
+their neighbors and so
+</p>
+
+</aside>
 
 
 </section>
-<section id="slide-orgb3c97f3">
-<h3 id="orgb3c97f3">Adhesion</h3>
+<section id="slide-org69295de">
+<h3 id="org69295de">Adhesion</h3>
 <div>
 \begin{align*}
 W_{12} = \gamma_1 + \gamma_2 - \gamma_{12}
@@ -751,7 +977,14 @@ W_{12} = \gamma_1 + \gamma_2 - \gamma_{12}
 <aside class="notes">
 <p>
 The work of adhesion is the free energy required to sever the
-interface between two materials.
+interface between two materials.  This gives an indication of how
+strongly the two different materials want to adhere to each other.  
+</p>
+
+<p>
+When we cut the interface between to materials, we lose the
+interfacial free energy between to two interfaces, and we gain the
+surface tensions of the two separate materials.
 </p>
 
 <p>
@@ -760,30 +993,15 @@ adhesion is 42.78 mJ\,m<sup>-2</sup>.  Interestingly, this is roughly the same
 as the cohesive free energy of n-octane.
 </p>
 
-<p>
-water-octane
-(- (+ 72.80 21.62) 51.64)
-</p>
-
-<p>
-water-mercury
-(- (+ 72.80 425.41) 415)
-</p>
 
 <p>
 For mercury and water, the work of adhesion is 83.21 mJ m<sup>-2</sup>.
 </p>
 
-
-<p>
-<a href="https://en.wikipedia.org/wiki/Adhesion">https://en.wikipedia.org/wiki/Adhesion</a>
-</p>
-
 </aside>
-
 </section>
-<section id="slide-org1f6f681">
-<h3 id="org1f6f681">oil-water interface</h3>
+<section id="slide-org0bb9f75">
+<h3 id="org0bb9f75">oil-water interface</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -858,25 +1076,11 @@ cohesion energy for water: 145.6 mJ m<sup>-2</sup>
 
 </p>
 
-<p>
-(- (+ 72.80 18.43) 50.80)
-(- (+ 72.80 20.14) 51.24)
-(- (+ 72.80 21.62) 51.64)
-(- (+ 72.80 23.83) 52.33)
-(- (+ 72.80 25.35) 52.87)
-</p>
-
-<p>
-Data can be found 
-10.1021/je000245r
-10.1021/la960800g
-</p>
-
 </aside>
 
 </section>
-<section id="slide-orgc1555b6">
-<h3 id="orgc1555b6">hydrophobic effect</h3>
+<section id="slide-org8ef0bb8">
+<h3 id="org8ef0bb8">hydrophobic effect</h3>
 <div style="display:flex; flex-direction:row; justify-content:center">
 
 <div class="figure">
@@ -894,8 +1098,8 @@ Data can be found
 </section>
 </section>
 <section>
-<section id="slide-orga02f142">
-<h2 id="orga02f142">Wetting</h2>
+<section id="slide-orgf59cd95">
+<h2 id="orgf59cd95">Wetting</h2>
 <div style="display:flex; justify-content:center; align:center">
 
 <div class="figure">
@@ -912,18 +1116,16 @@ Data can be found
 
 
 <aside class="notes">
-nil
+<p>
+
+</p>
+
 </aside>
 
 
 </section>
-<section id="slide-org12df896">
-<h3 id="org12df896">Wetting</h3>
-<iframe allow="autoplay; fullscreen" height="640" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31133&amp;code=de~TEs0xqABA4CEHLgBdOWUekbkLH9h" frameborder="0" allowfullscreen></iframe>
-
-</section>
-<section id="slide-orga7bd00b">
-<h3 id="orga7bd00b">Contact angle</h3>
+<section id="slide-orgfede81a">
+<h3 id="orgfede81a">Contact angle</h3>
 
 <div class="figure">
 <p><img src="http://lejpt.academicdirect.org/A10/029_038_files/image003.gif" alt="image003.gif" height="300" />
@@ -1005,8 +1207,8 @@ that the value of the cosine can only vary between \(-1\) and \(1\).
 
 
 </section>
-<section id="slide-org03a3df0">
-<h3 id="org03a3df0">Contact angle: Typical values</h3>
+<section id="slide-org057a741">
+<h3 id="org057a741">Contact angle: Typical values</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1075,8 +1277,8 @@ that the value of the cosine can only vary between \(-1\) and \(1\).
 </table>
 
 </section>
-<section id="slide-org07ee606">
-<h3 id="org07ee606">Dynamic contact angle</h3>
+<section id="slide-orgded2934">
+<h3 id="orgded2934">Dynamic contact angle</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/Dynamic-Contact-Angles.png" alt="Dynamic-Contact-Angles.png" height="100%" />
@@ -1088,13 +1290,13 @@ that the value of the cosine can only vary between \(-1\) and \(1\).
 </section>
 </section>
 <section>
-<section id="slide-org817ec95">
-<h2 id="org817ec95">Young-Laplace equation</h2>
+<section id="slide-org7e5a2f9">
+<h2 id="org7e5a2f9">Young-Laplace equation</h2>
 <iframe allow="autoplay; fullscreen" height="640" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31140&amp;code=cT~vNz0yvmcyldaJPeIFLCUssvT7TEW" frameborder="0" allowfullscreen></iframe>
 
 </section>
-<section id="slide-orgb516951">
-<h3 id="orgb516951">Young-Laplace equation</h3>
+<section id="slide-org738065c">
+<h3 id="org738065c">Young-Laplace equation</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/79846930-0a49-11e6-abac-4f85bfec1ac4_Screen-Shot-2016-04-24-at-2-21-38-PM.png.cf.jpg" alt="79846930-0a49-11e6-abac-4f85bfec1ac4_Screen-Shot-2016-04-24-at-2-21-38-PM.png.cf.jpg" />
@@ -1127,8 +1329,8 @@ interface with a slight change in pressure.
 </aside>
 
 </section>
-<section id="slide-orga7615f7">
-<h3 id="orga7615f7">Pressure between two soap bubbles</h3>
+<section id="slide-orgf5560bb">
+<h3 id="orgf5560bb">Pressure between two soap bubbles</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/Figure_12_08_05a.jpg" alt="Figure_12_08_05a.jpg" height="500" />
@@ -1142,15 +1344,15 @@ nil
 
 
 </section>
-<section id="slide-orgbe1de79">
-<h3 id="orgbe1de79">Capillary rise</h3>
+<section id="slide-org209b2e2">
+<h3 id="org209b2e2">Capillary rise</h3>
 <iframe allow="autoplay; fullscreen" height="640" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31139&amp;code=cV~ycd2TGIStiQXEfeQSZp2RJ8wrOGY" frameborder="0" allowfullscreen></iframe>
 
 </section>
 </section>
 <section>
-<section id="slide-orgf0273ad" data-audio-src="interfaces/summary.ogg">
-<h2 id="orgf0273ad">Summary</h2>
+<section id="slide-org7fec1f3" data-audio-src="interfaces/summary.ogg">
+<h2 id="org7fec1f3">Summary</h2>
 <ul>
 <li>Interfacial / surface tension</li>
 <li>Wetting
