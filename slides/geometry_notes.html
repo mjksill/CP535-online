@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org4712c6f">
-<h2 id="org4712c6f">Navigation instructions</h2>
+<section id="slide-orgcd509c5">
+<h2 id="orgcd509c5">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -73,22 +73,20 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org42f099a">
-<h2 id="org42f099a">CP535/970: Molecular and interfacial science</h2>
+<section id="slide-org859893a">
+<h2 id="org859893a">CP535/970: Molecular and interfacial science</h2>
 <h2>Mathematical description of interfaces</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
 <p class="fragment" data-audio-src="interfaces/title.org"></p>
-
-<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
 
 
 
 </section>
 </section>
 <section>
-<section id="slide-org36e0acb" data-audio-src="geometry/overview.ogg">
-<h2 id="org36e0acb">Overview</h2>
+<section id="slide-org51d43c6" data-audio-src="geometry/overview.ogg">
+<h2 id="org51d43c6">Overview</h2>
 <ul>
 <li>Curves in space</li>
 <li>Surfaces</li>
@@ -106,16 +104,16 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org2998aeb">
-<h2 id="org2998aeb">Shapes of interfaces</h2>
+<section id="slide-org019688a">
+<h2 id="org019688a">Shapes of interfaces</h2>
 <aside class="notes">
 nil
 </aside>
 
 
 </section>
-<section id="slide-org0d21210">
-<h3 id="org0d21210">Curves in space</h3>
+<section id="slide-orgb90981a">
+<h3 id="orgb90981a">Curves in space</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/s3.gif" alt="s3.gif" width="100%" />
@@ -124,34 +122,100 @@ nil
 
 <aside class="notes">
 <p>
-curvature of a circle&#x2026;
+
+</p>
+
+
+<p>
+We parameterize a curve by giving the position of all the points on
+the curve as a function of some parameter \(u\): \({\bf R}(u)\).  We can
+think of the parameter \(u\) as time.  If we do this, we can then
+consider the derivative of the position of a point on the curve with
+respect to \(u\) as a velocity:
+</p>
+<div>
+\begin{align*}
+\frac{d{\bf R}(u)}{du} 
+\end{align*}
+
+</div>
+
+<p>
+tangent vector: this is a unit vector pointing along the curve.  This
+is simply the normalized "velocity".
 </p>
 
 <p>
+arc length: A key quantity of a curve is the length it sweeps out
+between any two points.  We can determine this by using the Pythagoras
+theorem, along with some calculus.
+</p>
+<div>
+\begin{align*}
+ds^2 = dx^2 + dy^2
+\end{align*}
+
+</div>
+<p>
+where \(ds\) is a bit of length along the arc.  Note that this is not
+really along the arc, but the smaller dx and dy are, the closer it
+will be.
+</p>
+
+<div>
+\begin{align*}
+ds^2 = dx^2 + dy^2
+\\
+\left(\frac{ds}{du}\right)^2 
+&= \frac{d{\bf R}(u)}{du}\cdot\frac{d{\bf R}(u)}{du}
+\end{align*}
+
+</div>
+
+<p>
+arc-length parameterization
+</p>
+
+
+<p>
+normal vector
+</p>
+
+<p>
+curvature
+</p>
+
+<p>
+example: a circle&#x2026;
+</p>
+
+
+<p>
 curvature: need to relate the area to the curvature.
-Monge parameterization
-mean curvature, Gaussian curvature
 </p>
 
 </aside>
 
 </section>
-<section id="slide-org165e8d6">
-<h3 id="org165e8d6">Curves in space</h3>
+<section id="slide-orgf488fc5">
+<h3 id="orgf488fc5">Curves in space</h3>
 <iframe allow="autoplay; fullscreen" height="676" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31142&amp;code=d5~ikL7hXEHwDJKFZGn7RFYy59SBOq4" frameborder="0" allowfullscreen></iframe>
 
 </section>
-<section id="slide-orgabf352e">
-<h3 id="orgabf352e">Curvature of surfaces</h3>
+<section id="slide-orgd222c05">
+<h3 id="orgd222c05">Curvature of surfaces</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/animacija2.gif" alt="animacija2.gif" height="500" />
 </p>
 </div>
 
+
+
+
 </section>
-<section id="slide-orgb9619ab">
-<h3 id="orgb9619ab">Curvature of surfaces</h3>
+<section id="slide-org2288a28">
+<h3 id="org2288a28">Curvature of surfaces</h3>
 <div style="background-color:lightblue">
 
 
@@ -164,8 +228,8 @@ Sorry, your browser does not support SVG.</object>
 </div>
 
 </section>
-<section id="slide-org28b4fc6">
-<h3 id="org28b4fc6">Surfaces</h3>
+<section id="slide-orga1edd3a">
+<h3 id="orga1edd3a">Surfaces</h3>
 <div style="background-color:lightblue">
 
 <div class="row">
@@ -203,8 +267,8 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-org0a3ce90">
-<h2 id="org0a3ce90">Young-Laplace equation</h2>
+<section id="slide-org481544d">
+<h2 id="org481544d">Young-Laplace equation</h2>
 
 <div class="figure">
 <p><img src="https://pubs.rsc.org/services/images/RSCpubs.ePlatform.Service.FreeContent.ImageService.svc/ImageService/Articleimage/2010/CS/b909101g/b909101g-f3.gif" alt="b909101g-f3.gif" height="500" />
@@ -218,19 +282,45 @@ Sorry, your browser does not support SVG.</object>
 
 </div>
 
+</section>
+<section id="slide-orgfce293e">
+<h3 id="orgfce293e">Soap films</h3>
+
+<div class="figure">
+<p><img src="https://images.squarespace-cdn.com/content/v1/5b3a61a03e2d0904012fa1d9/1530811166944-UIQK4GIM8T8W8KQ727RO/ke17ZwdGBToddI8pDm48kLFMUEKsPAJyEsoVcd11iTBZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVF02IZaLJ0hPfvdWLoZMxQsaOkWWtZfxKXHbzmCN4lTqYQIDbVYSG9IiMQzMJD3ixM/catenoid.jpg" alt="catenoid.jpg" height="500" />
+</p>
+</div>
+
 
 </section>
-<section id="slide-org4e517d5">
-<h3 id="org4e517d5">Droplet shape</h3>
+<section id="slide-org49c4994">
+<h3 id="org49c4994">Droplet shape</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/pendant_drop.jpg" alt="pendant_drop.jpg" height="500" />
 </p>
 </div>
 
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+The influence of gravity on droplet shape.  
+</p>
+
+<p>
+We know that for a liquid in a gravitational field
+</p>
+
+</aside>
+
 </section>
-<section id="slide-org32995a6">
-<h3 id="org32995a6">Surfaces of revolution</h3>
+</section>
+<section>
+<section id="slide-orgbcdb020">
+<h2 id="orgbcdb020">Surfaces of revolution</h2>
 <div style="background-color:lightblue">
 
 <div class="figure">
@@ -242,13 +332,13 @@ Sorry, your browser does not support SVG.</object>
 
 
 </section>
-<section id="slide-orgb85f7b1">
-<h3 id="orgb85f7b1">Surfaces of revolution</h3>
+<section id="slide-org8f49d9e">
+<h3 id="org8f49d9e">Surfaces of revolution</h3>
 <iframe allow="autoplay; fullscreen" height="640" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31138&amp;code=cL~mggxUeBJT3dEeKe5GkFzy5iIyswe" frameborder="0" allowfullscreen></iframe>
 
 </section>
-<section id="slide-orgd5cb4be">
-<h3 id="orgd5cb4be">Overfilling a cup</h3>
+<section id="slide-orgdc4db3a">
+<h3 id="orgdc4db3a">Overfilling a cup</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/maxresdefault.jpg" alt="maxresdefault.jpg" height="500" />
@@ -272,8 +362,8 @@ A nice demonstration of overfilling a cup is given in
 </aside>
 
 </section>
-<section id="slide-org3e6bacc">
-<h3 id="org3e6bacc">Overfilling a cup</h3>
+<section id="slide-orgc62bf94">
+<h3 id="orgc62bf94">Overfilling a cup</h3>
 
 <div class="figure">
 <p><img src="../figures/bitmap/mvhQK.png" alt="mvhQK.png" height="100%" />
@@ -284,23 +374,14 @@ A nice demonstration of overfilling a cup is given in
 </section>
 </section>
 <section>
-<section id="slide-org68f3a62" data-audio-src="geometry/summary.ogg">
-<h2 id="org68f3a62">Summary</h2>
+<section id="slide-org8aa6ee5" data-audio-src="geometry/summary.ogg">
+<h2 id="org8aa6ee5">Summary</h2>
 <ul>
-<li>Interfacial / surface tension</li>
-<li>Wetting
-<ul>
-<li>contact angle</li>
-
-</ul></li>
-<li>Intermolecular forces
-<ul>
-<li>cohesive energy / adhesive energy</li>
-
-</ul></li>
-<li>Young-Laplace equation</li>
-<li>Capillary force</li>
-<li>Shape of interfaces</li>
+<li>Curves in space</li>
+<li>Surfaces</li>
+<li>Generalization of the Young-Laplace equation</li>
+<li>Surfaces of revolution</li>
+<li>Summary</li>
 
 </ul>
 
